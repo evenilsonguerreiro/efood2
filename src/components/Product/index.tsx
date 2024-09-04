@@ -1,0 +1,30 @@
+import { ButtonContainer } from "../Button/styles"
+import Tag from "../Tag"
+import { Card, Descricao, Fundo, Infos, Titulo } from "./styles"
+
+type Props = {
+  title: string
+  image: string
+  description: string
+  infos: string[]
+  button: string
+}
+
+const Product = ({ title, image, description, infos, button }: Props) => (
+  <>
+    <Card>
+      <img src={image} />
+      <Infos>
+        {infos.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
+      </Infos>
+      <Fundo>
+        <Titulo>{title}</Titulo>
+        <Descricao>{description}</Descricao>
+        <ButtonContainer>{button}</ButtonContainer>
+      </Fundo>
+    </Card>
+  </>
+)
+export default Product
