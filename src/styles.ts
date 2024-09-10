@@ -12,6 +12,11 @@ export const EstiloGlobal = createGlobalStyle`
     padding: 0;
     font-family: 'Roboto', sans-serif;
   }
+  .link {
+    color: ${cores.branco};
+    text-decoration: none;
+  }
+
 
   body{
     background-color: #fff;
@@ -23,4 +28,5 @@ export const EstiloGlobal = createGlobalStyle`
       margin: auto;
     }
   }
+
 `

@@ -26,6 +26,7 @@ export const Titulo = styled.h3`
   font-weight: 700;
   margin-left: 5px;
   margin-bottom: 16px;
+  color: ${cores.pink};
 `
 export const Descricao = styled.p`
   width: 456px;
@@ -33,6 +34,7 @@ export const Descricao = styled.p`
   font-size: 14px;
   font-weight: 400;
   margin-left: 5px;
+  color: ${cores.pink};
 `
 export const Infos = styled.div`
   position: absolute;
