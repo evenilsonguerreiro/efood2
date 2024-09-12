@@ -13,6 +13,10 @@ export const EstiloGlobal = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
   .link {
+    color: ${cores.pink};
+    text-decoration: none;
+  }
+  .link2 {
     color: ${cores.branco};
     text-decoration: none;
   }

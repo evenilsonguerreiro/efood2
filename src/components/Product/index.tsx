@@ -24,7 +24,7 @@ const Product = ({ title, image, description, infos, button }: Props) => (
         <Titulo>{title}</Titulo>
         <Descricao>{description}</Descricao>
         <ButtonContainer>
-          <Link className="link" to="/perfil">
+          <Link className="link2" to="/perfil">
             {button}
           </Link>
         </ButtonContainer>
