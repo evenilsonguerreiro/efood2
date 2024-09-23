@@ -5,20 +5,13 @@ import ProductList2 from "../../components/ProductList2"
 import Cardapio from "../../models/Cardapio"
 
 import image from "../../assets/imagem/image 3 (3).png"
+import produto1 from "../../assets/imagem/produto1.png"
+import produto2 from "../../assets/imagem/produto (2).png"
 import { useState } from "react"
 
-import {
-  Content,
-  Descricao,
-  ModalFundo,
-  ModalSpan,
-  ModalTitle,
-  Overlay
-} from "./styles"
-
-import carrinho from "../../assets/imagem/carrinho.png"
+import { BarraLateral, Content, Overlay, Precos } from "./styles"
 import { CardButton } from "../../components/Product2/styles"
-import { Link } from "react-router-dom"
+
 const italiano: Cardapio[] = [
   {
     id: 1,
@@ -70,7 +63,7 @@ const italiano: Cardapio[] = [
   }
 ]
 
-const PerfilModal = () => {
+const PerfilCarrinho = () => {
   const [showOverlay, setShowOverlay] = useState(true)
 
   const handleClose = () => {
@@ -87,35 +80,16 @@ const PerfilModal = () => {
       {showOverlay && (
         <Overlay>
           <Content onClick={handleClose}>
-            <div className="container">
-              <ModalFundo>
-                <div>
-                  <img src={carrinho} alt="" />
-                </div>
-                <div>
-                  <ModalTitle>Pizza Marguerita</ModalTitle>
-                  <Descricao>
-                    A pizza Margherita é uma pizza clássica da culinária
-                    italiana, reconhecida por sua simplicidade e sabor
-                    inigualável. Ela é feita com uma base de massa fina e
-                    crocante, coberta com molho de tomate fresco, queijo
-                    mussarela de alta qualidade, manjericão fresco e azeite de
-                    oliva extra-virgem. A combinação de sabores é perfeita, com
-                    o molho de tomate suculento e ligeiramente ácido, o queijo
-                    derretido e cremoso e as folhas de manjericão frescas, que
-                    adicionam um toque de sabor herbáceo. É uma pizza simples,
-                    mas deliciosa, que agrada a todos os paladares e é uma ótima
-                    opção para qualquer ocasião.
-                  </Descricao>
-                  <ModalSpan>Serve: de 2 a 3 pessoas</ModalSpan>
-                  <CardButton>
-                    <Link className="link" to="/perfilcarrinho">
-                      Adicionar ao carrinho - R$ 60,90
-                    </Link>
-                  </CardButton>
-                </div>
-              </ModalFundo>
-            </div>
+            <BarraLateral>
+              <img className="img1" src={produto1} alt="" />
+              <img className="img2" src={produto1} alt="" />
+              <img className="img3" src={produto1} alt="" />
+              <Precos>
+                <h4>Valor total</h4>
+                <span>R$ 178,90</span>
+              </Precos>
+              <CardButton>Continuar com a entrega</CardButton>
+            </BarraLateral>
           </Content>
         </Overlay>
       )}
@@ -123,4 +97,4 @@ const PerfilModal = () => {
   )
 }
 
-export default PerfilModal
+export default PerfilCarrinho
