@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import {
   HeaderPerfilBar,
   HeaderPerfilLogo,
@@ -12,16 +13,16 @@ import Produto from "../../assets/imagem/0 produto(s) no carrinho (1).png"
 
 const HeaderPerfil = () => (
   <HeaderPerfilBar>
-    <img src={fundo} alt="" />
+    <img src={fundo} alt="Fundo do perfil" />
     <div className="container">
       <HeaderPerfillogo2>
-        <img src={Restaurante} alt="" />
+        <img src={Restaurante} alt="imagem do restaralte" />
       </HeaderPerfillogo2>
       <HeaderPerfilLogo>
-        <img src={logo} alt="" />
+        <img src={logo} alt="imagem logo" />
       </HeaderPerfilLogo>
       <HeaderPerfilLogo3>
-        <img src={Produto} alt="" />
+        <img src={Produto} alt="imagem produto" />
       </HeaderPerfilLogo3>
     </div>
   </HeaderPerfilBar>

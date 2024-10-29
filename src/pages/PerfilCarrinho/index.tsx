@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Footer from "../../components/Footer"
 import HeaderPerfil from "../../components/HeaderPerfil"
 import Hero from "../../components/Hero"
@@ -6,7 +7,6 @@ import Cardapio from "../../models/Cardapio"
 
 import image from "../../assets/imagem/image 3 (3).png"
 import produto1 from "../../assets/imagem/produto1.png"
-import produto2 from "../../assets/imagem/produto (2).png"
 import { useState } from "react"
 
 import { BarraLateral, Content, Overlay, Precos } from "./styles"
