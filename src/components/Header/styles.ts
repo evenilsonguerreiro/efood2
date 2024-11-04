@@ -20,7 +20,7 @@ export const HeaderLogo = styled.div`
   top: 45px;
   position: absolute;
 `
-export const HeaderDescricao = styled.p`
+export const HeaderDescricao = styled.div`
   font-size: 36px;
   width: 539px;
   height: 89px;
