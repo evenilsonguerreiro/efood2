@@ -11,7 +11,7 @@ const Header = () => (
       <img src={logo} alt="Logo do restaurante" />
     </HeaderLogo>
     <HeaderDescricao>
-      <div>Viva experiências gastronômicas no conforto da sua casa</div>
+      <p>Viva experiências gastronômicas no conforto da sua casa</p>
     </HeaderDescricao>
   </HeaderBar>
 )

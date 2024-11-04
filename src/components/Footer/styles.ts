@@ -2,6 +2,9 @@ import styled from "styled-components"
 
 export const FooterBar = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
   img {
     width: 100%;
@@ -29,8 +32,10 @@ export const FooterIcones = styled.div`
 `
 export const FooterDescricao = styled.p`
   position: absolute;
+  display: flex;
+  align-items: center;
   top: 230px;
-  left: 30%;
+
   img {
     width: 480px;
     height: 24px;

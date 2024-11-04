@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { FooterBar, FooterDescricao, FooterIcones, FooterLogo } from "./styles"
 
 import Rectangle from "../../assets/imagem/Rectangle 2.png"
