@@ -13,10 +13,11 @@ export const HeaderBar = styled.header`
   }
 `
 export const HeaderLogo = styled.div`
+  display: flex;
+  align-items: center;
   width: 125px;
   height: 57px;
   top: 45px;
-  left: 45%;
   position: absolute;
 `
 export const HeaderDescricao = styled.p`

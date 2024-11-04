@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Product from "../Product"
 import { Container, List } from "./styles"
 import Comidas from "../../models/Comidas"
