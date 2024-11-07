@@ -1,26 +1,25 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { FooterBar, FooterDescricao, FooterIcones, FooterLogo } from "./styles"
-
-import Rectangle from "../../assets/imagem/Rectangle 2.png"
 import logo from "../../assets/imagem/logo (1).png"
 import instagran from "../../assets/imagem/instagram-round-svgrepo-com (1) 1.png"
 import Group from "../../assets/imagem/Group.png"
 import Vector from "../../assets/imagem/Vector.png"
-import effod from "../../assets/imagem/A efood é uma plataforma para divulgação de estabelecimentos, a responsabilidade pela entrega, qualidade dos produtos é toda do estabelecimento contratado..png"
 
 const Footer = () => (
   <FooterBar>
-    <img src={Rectangle} alt="" />
     <FooterLogo>
-      <img src={logo} alt="" />
+      <img src={logo} alt="logo" />
     </FooterLogo>
     <FooterIcones>
-      <img src={instagran} alt="" />
-      <img src={Group} alt="" />
-      <img src={Vector} alt="" />
+      <img src={instagran} alt="instagran" />
+      <img src={Group} alt="faceboock" />
+      <img src={Vector} alt="faceboock" />
     </FooterIcones>
     <FooterDescricao>
-      <img src={effod} alt="" />
+      <p>A efood é uma plataforma para divulgação de estabelecimentos, a
+        responsabilidade pela entrega, qualidade dos produtos é toda do
+        estabelecimento contratado.
+      </p>
     </FooterDescricao>
   </FooterBar>
 )

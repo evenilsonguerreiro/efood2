@@ -3,18 +3,14 @@ import { cores } from "../../styles"
 
 export const HeaderBar = styled.header`
   width: 100%;
+  height: 384px;
+  background-color: ${cores.branco};
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  img {
-    width: 100%;
-  }
 `
 export const HeaderLogo = styled.div`
-  display: flex;
-  align-items: center;
   width: 125px;
   height: 57px;
   top: 45px;
@@ -26,9 +22,7 @@ export const HeaderDescricao = styled.div`
   height: 89px;
   text-align: center;
   position: absolute;
-  top: 236px;
-  display: flex;
-  align-items: center;
+  top: 220px;
   color: ${cores.pink};
   font-weight: bold;
 `
