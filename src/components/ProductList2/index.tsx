@@ -12,9 +12,9 @@ const ProductList2 = ({ cardapios }: Props) => (
   <Container>
     <div className="container">
       <List2>
-        {cardapios.map((cardapio) => (
+        {cardapios.map((cardapio, index) => (
           <Product2
-            key={cardapio.id}
+            key={cardapio.id || index}
             title={cardapio.title}
             image={cardapio.image}
             description={cardapio.description}

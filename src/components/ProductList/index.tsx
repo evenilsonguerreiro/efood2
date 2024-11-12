@@ -12,9 +12,9 @@ const ProductList = ({ comidas }: Props) => (
   <Container>
     <div className="container">
       <List>
-        {comidas.map((comida: Comidas) => (
+        {comidas.map((comida: Comidas, index) => (
           <Product
-            key={comida.id}
+            key={comida.id || index}
             title={comida.title}
             description={comida.description}
             image={comida.image}
