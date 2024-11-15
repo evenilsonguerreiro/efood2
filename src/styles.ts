@@ -32,5 +32,12 @@ export const EstiloGlobal = createGlobalStyle`
       margin: auto;
     }
   }
+  @media (max-width:768px) {
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+
+
+  }
 
 `

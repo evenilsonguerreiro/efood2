@@ -10,6 +10,17 @@ export const FooterBar = styled.div`
   width: 100%;
   height: 298px;
   background-color: ${cores.branco};
+
+  @media (max-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 370px;
+    height: 298px;
+    background-color: ${cores.branco};
+  }
 `
 export const FooterLogo = styled.div`
   position: absolute;
@@ -17,6 +28,15 @@ export const FooterLogo = styled.div`
   img {
     width: 125px;
     height: 57px;
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+  top: 40px;
+  img {
+    width: 100px;
+
+  }
   }
 `
 export const FooterIcones = styled.div`
@@ -35,4 +55,14 @@ export const FooterDescricao = styled.div`
   text-align: center;
   font-size: 10px;
   color: ${cores.pink};
+
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 230px;
+    width: 300px;
+    height: 24px;
+    text-align: center;
+    font-size: 10px;
+    color: ${cores.pink};
+  }
 `
