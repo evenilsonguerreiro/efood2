@@ -10,15 +10,9 @@ export const HeaderBar = styled.header`
   align-items: center;
 
   @media (max-width:768px) {
-    width: 100%;
     height: 170px;
-    background-color: ${cores.branco};
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-bottom: 10px;
-
   }
 `
 export const HeaderLogo = styled.div`
