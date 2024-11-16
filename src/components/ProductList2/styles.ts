@@ -8,5 +8,11 @@ export const Container = styled.section<Props>`
 export const List2 = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 24px;
+  
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr ;
+    column-gap: 10px;
+  }
 `

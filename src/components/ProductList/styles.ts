@@ -11,6 +11,6 @@ export const List = styled.ul`
 
   @media (max-width: 768px) {
     display: grid;
-  grid-template-columns: 1fr ;
+    grid-template-columns: 1fr ;
   }
 `

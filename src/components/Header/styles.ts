@@ -24,6 +24,7 @@ export const HeaderBar = styled.header`
 export const HeaderLogo = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 45px;
 
   img{

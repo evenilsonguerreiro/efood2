@@ -20,6 +20,15 @@ export const EstiloGlobal = createGlobalStyle`
     color: ${cores.branco};
     text-decoration: none;
   }
+  .containerPerfil {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1024px;
+      width: 100%;
+      margin: auto;
+
+  }
 
 
   body{

@@ -10,7 +10,7 @@ import logo from "../../assets/imagem/logo (1).png"
 
 const HeaderPerfil = () => (
   <HeaderPerfilBar>
-    <div className="container">
+      <div className="containerPerfil">
       <HeaderPerfillogo2>
         <p>Restaurantes</p>
       </HeaderPerfillogo2>
@@ -20,7 +20,7 @@ const HeaderPerfil = () => (
       <HeaderPerfilLogo3>
         <p>0 produto(s) no carrinho</p>
       </HeaderPerfilLogo3>
-    </div>
+      </div>
   </HeaderPerfilBar>
 )
 export default HeaderPerfil
