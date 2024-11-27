@@ -12,7 +12,7 @@ export const HeaderBar = styled.header`
   @media (max-width:768px) {
     height: 170px;
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 10px;                                                      
   }
 `
 export const HeaderLogo = styled.div`

@@ -1,4 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
+
 import Footer from "../../components/Footer"
 import HeaderPerfil from "../../components/HeaderPerfil"
 import Hero from "../../components/Hero"
@@ -6,12 +7,12 @@ import ProductList2 from "../../components/ProductList2"
 import Cardapio from "../../models/Cardapio"
 
 import image from "../../assets/imagem/image 3 (3).png"
-import produto1 from "../../assets/imagem/produto1.png"
 import { useState } from "react"
 
-import { BarraLateral, Content, Overlay, Precos } from "./styles"
+import { BarraLateral, Campo, CampoMedio, Complemento, DivCep, Endereco, Overlay, SubTitulo, TituloEntrega } from "./styles"
 import { CardButton } from "../../components/Product2/styles"
 import { Link } from "react-router-dom"
+import { Content } from "../PerfilModal/styles"
 
 const italiano: Cardapio[] = [
   {
@@ -64,7 +65,7 @@ const italiano: Cardapio[] = [
   }
 ]
 
-const PerfilCarrinho = () => {
+const PerfilEntrega = () => {
   const [showOverlay, setShowOverlay] = useState(true)
 
   const handleClose = () => {
@@ -82,16 +83,22 @@ const PerfilCarrinho = () => {
         <Overlay>
           <Content onClick={handleClose}>
             <BarraLateral>
-              <img className="img1" src={produto1} alt="" />
-              <img className="img2" src={produto1} alt="" />
-              <img className="img3" src={produto1} alt="" />
-              <Precos>
-                <h4>Valor total</h4>
-                <span>R$ 178,90</span>
-              </Precos>
+              <TituloEntrega>Entrega</TituloEntrega>
+              <SubTitulo>Quem irá receber</SubTitulo>
+              <Campo>João Paulo de Souza</Campo>
+              <Endereco>Endereço</Endereco>
+              <Campo></Campo>
+              <Endereco>Cidade</Endereco>
+              <Campo> </Campo>
+              <DivCep>
+                <CampoMedio></CampoMedio>
+                <CampoMedio></CampoMedio>
+              </DivCep>
+              <Complemento>Complemento (opcional)</Complemento>
+              <Campo></Campo>
               <CardButton>
-              <Link className="link" to="/perfilEntrega">
-                Continuar com a entrega
+              <Link className="link" to="/perfilPagamento">
+                Continuar com o pagamento
                     </Link>
                 </CardButton>
             </BarraLateral>
@@ -102,4 +109,4 @@ const PerfilCarrinho = () => {
   )
 }
 
-export default PerfilCarrinho
+export default PerfilEntrega
