@@ -31,7 +31,6 @@ export const BarraLateral = styled.div`
     width: 344px;
     height: 24px;
     top: 400px;
-    
   }
 `
 export const TituloEntrega = styled.span`
@@ -41,7 +40,6 @@ export const TituloEntrega = styled.span`
   font-weight: 700px;
   color: ${cores.branco};
   margin-bottom: 10px;
-
 `
 export const SubTitulo = styled.p`
   width: 109px;
@@ -59,14 +57,12 @@ export const Campo = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 16px;
-
 `
 export const CampoMedio = styled.div`
   width: 155px;
   height: 32px;
   background-color: ${cores.branco};
   margin-bottom: 16px;
-
 `
 export const Endereco = styled.p`
   width: 59px;
@@ -86,8 +82,4 @@ export const DivCep = styled.div`
   display: flex;
   justify-content: space-between;
   width: 340px;
-
 `
-
-
-

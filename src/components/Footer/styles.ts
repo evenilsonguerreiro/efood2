@@ -32,11 +32,10 @@ export const FooterLogo = styled.div`
 
   @media (max-width: 768px) {
     position: absolute;
-  top: 40px;
-  img {
-    width: 100px;
-
-  }
+    top: 40px;
+    img {
+      width: 100px;
+    }
   }
 `
 export const FooterIcones = styled.div`

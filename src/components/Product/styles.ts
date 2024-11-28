@@ -22,10 +22,9 @@ export const Card = styled.div`
     border: 1px solid ${cores.pink};
     position: relative;
 
-    img{
+    img {
       width: 370px;
     }
-
   }
 `
 
@@ -33,7 +32,7 @@ export const Fundo = styled.div`
   width: 472px;
   height: 181px;
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     width: 470px;
     height: 181px;
   }
@@ -55,14 +54,13 @@ export const Descricao = styled.p`
   margin-left: 5px;
   color: ${cores.pink};
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     width: 340px;
     height: 70px;
     font-size: 14px;
     font-weight: 400;
     margin-left: 5px;
     color: ${cores.pink};
-
   }
 `
 export const Infos = styled.div`

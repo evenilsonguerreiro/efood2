@@ -9,10 +9,10 @@ export const HeaderBar = styled.header`
   flex-direction: column;
   align-items: center;
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     height: 170px;
     position: relative;
-    margin-bottom: 10px;                                                      
+    margin-bottom: 10px;
   }
 `
 export const HeaderLogo = styled.div`
@@ -21,13 +21,12 @@ export const HeaderLogo = styled.div`
   justify-content: center;
   margin-top: 45px;
 
-  img{
+  img {
     width: 125px;
     height: 57px;
   }
 
-
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -48,7 +47,7 @@ export const HeaderDescricao = styled.div`
   color: ${cores.pink};
   font-weight: bold;
 
-  @media (max-width:768px) {
+  @media (max-width: 768px) {
     font-size: 16px;
     width: 250px;
     height: 89px;
@@ -58,6 +57,5 @@ export const HeaderDescricao = styled.div`
     margin-top: 10px;
     color: ${cores.pink};
     font-weight: bold;
-
   }
 `

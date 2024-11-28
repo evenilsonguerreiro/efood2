@@ -9,7 +9,17 @@ import Cardapio from "../../models/Cardapio"
 import image from "../../assets/imagem/image 3 (3).png"
 import { useState } from "react"
 
-import { BarraLateral, Campo, CampoMedio, Complemento, DivCep, Endereco, Overlay, SubTitulo, TituloEntrega } from "./styles"
+import {
+  BarraLateral,
+  Campo,
+  CampoMedio,
+  Complemento,
+  DivCep,
+  Endereco,
+  Overlay,
+  SubTitulo,
+  TituloEntrega
+} from "./styles"
 import { CardButton } from "../../components/Product2/styles"
 import { Link } from "react-router-dom"
 import { Content } from "../PerfilModal/styles"
@@ -97,10 +107,10 @@ const PerfilEntrega = () => {
               <Complemento>Complemento (opcional)</Complemento>
               <Campo></Campo>
               <CardButton>
-              <Link className="link" to="/perfilPagamento">
-                Continuar com o pagamento
-                    </Link>
-                </CardButton>
+                <Link className="link" to="/perfilPagamento">
+                  Continuar com o pagamento
+                </Link>
+              </CardButton>
             </BarraLateral>
           </Content>
         </Overlay>

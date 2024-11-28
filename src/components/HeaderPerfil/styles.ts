@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { cores } from "../../styles"
 
-
 export const HeaderPerfilBar = styled.div`
   display: flex;
   justify-content: space-between; /* Espaço entre os elementos */
@@ -18,7 +17,6 @@ export const HeaderPerfilBar = styled.div`
     height: 186px;
     background-color: ${cores.branco};
   }
-
 `
 
 export const HeaderPerfillogo2 = styled.div`
@@ -53,6 +51,3 @@ export const HeaderPerfilLogo3 = styled.div`
   font-size: 18px;
   color: ${cores.pink};
 `
-
-
-

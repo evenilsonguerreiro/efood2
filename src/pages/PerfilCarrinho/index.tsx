@@ -90,10 +90,10 @@ const PerfilCarrinho = () => {
                 <span>R$ 178,90</span>
               </Precos>
               <CardButton>
-              <Link className="link" to="/perfilEntrega">
-                Continuar com a entrega
-                    </Link>
-                </CardButton>
+                <Link className="link" to="/perfilEntrega">
+                  Continuar com a entrega
+                </Link>
+              </CardButton>
             </BarraLateral>
           </Content>
         </Overlay>
