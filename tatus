@@ -1,0 +1,107 @@
+[33mcommit 7fe01ede25a343bfc70f1b2280aa509ee5eaf7e1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Wed Nov 27 19:00:21 2024 -0300
+
+    criacao das 3 paginas finais
+
+[33mcommit c9e5d151a3daa78cb2648d009719cb882bfc4126[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Sat Nov 16 16:24:25 2024 -0300
+
+    finalizando header styles
+
+[33mcommit d1eb758305282d00dca63c37dd176ebdcb0b1874[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Sat Nov 16 16:01:11 2024 -0300
+
+    ajustes no packge.json
+
+[33mcommit 4f070ea2b95923eae43be6d7d530394a48020db8[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Sat Nov 16 12:09:36 2024 -0300
+
+    ajuste no header
+
+[33mcommit cae7e46970a0501854e027b87dc5981f48bf3117[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Fri Nov 15 20:53:17 2024 -0300
+
+     max-width: 768px
+
+[33mcommit 46525850b9491994553eea515622a2512a53ed4c[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Tue Nov 12 18:22:10 2024 -0300
+
+    ajustes nos id
+
+[33mcommit 2d91dfb9df6b894becfd71436be8f248054c0228[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Tue Nov 12 18:05:52 2024 -0300
+
+    alteraracao no id
+
+[33mcommit bedabc3686394259538df95144aaceec6299b93c[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Thu Nov 7 17:54:08 2024 -0300
+
+     ajustes
+
+[33mcommit 3dc1c2dc9f87e21e7cd8d927745654a760fafde3[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Mon Nov 4 16:34:34 2024 -0300
+
+     novos ajustes
+
+[33mcommit ae30395ceadc90362598f2193e76ce60b1efeb6d[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Mon Nov 4 16:20:39 2024 -0300
+
+    ajuste no header
+
+[33mcommit c4d1c51bbf55c1a7683476a55f2742c357185382[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Mon Nov 4 14:54:25 2024 -0300
+
+     ajustes
+
+[33mcommit 9b9b3f23771db4df96b980ff665573640dbd4ad7[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Mon Nov 4 12:07:35 2024 -0300
+
+     ajustes no header
+
+[33mcommit 02ea68b95834f36bed157e1a3d7bc88b0f6a09f1[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Tue Oct 29 15:45:28 2024 -0300
+
+     ajustes finais 1
+
+[33mcommit 84c72ba1100d948a7a4bc89c1fde265b63e35abb[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Tue Oct 29 15:30:10 2024 -0300
+
+    ajustes finais
+
+[33mcommit f96b9e75ad071336bb1d6e0d832f86553efdea5f[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Mon Sep 23 15:52:00 2024 -0300
+
+    finalizando carrinho
+
+[33mcommit ace64289b8327bb36d79224fd668fb4b82f3828a[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Thu Sep 12 17:24:25 2024 -0300
+
+    finalizando modal
+
+[33mcommit 95f5ec453318cb65ad796b775d7b1fd35d004799[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Tue Sep 10 15:09:46 2024 -0300
+
+    finalizando Perfil
+
+[33mcommit 955d98f70c1879527bd1ee67aae49f0d8b2a3c3c[m
+Author: evenilson <evenilsonguerreiro@gmail.com>
+Date:   Wed Sep 4 16:37:38 2024 -0300
+
+    finalizando home
