@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { HeaderBar, HeaderLogo, HeaderDescricao } from "./styles"
+import { HeaderBar, HeaderLogo, HeaderDescricao } from './styles'
 
-import logo from "../../assets/imagem/logo (1).png"
+import logo from '../../assets/imagem/logo (1).png'
 
 const Header = () => (
   <HeaderBar>

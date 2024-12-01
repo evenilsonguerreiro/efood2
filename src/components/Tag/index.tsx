@@ -1,5 +1,5 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { TagContainer } from "./styles"
+import { TagContainer } from './styles'
 
 export type Props = {
   children: string

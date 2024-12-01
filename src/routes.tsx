@@ -1,14 +1,14 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Header from "./components/Header"
-import Home from "./pages/Home"
+import Header from './components/Header'
+import Home from './pages/Home'
 
-import { Routes, Route, useLocation } from "react-router-dom"
-import PerfilModal from "./pages/PerfilModal"
-import Perfil from "./pages/Perfil"
-import PerfilCarrinho from "./pages/PerfilCarrinho"
-import PerfilEntrega from "./pages/PerfilEntrega"
-import PerfilPagamento from "./pages/PerfilPagamento"
-import PerfilConfirmacao from "./pages/PerfilConfirmacao"
+import { Routes, Route, useLocation } from 'react-router-dom'
+import PerfilModal from './pages/PerfilModal'
+import Perfil from './pages/Perfil'
+import PerfilCarrinho from './pages/PerfilCarrinho'
+import PerfilEntrega from './pages/PerfilEntrega'
+import PerfilPagamento from './pages/PerfilPagamento'
+import PerfilConfirmacao from './pages/PerfilConfirmacao'
 
 const Rotas = () => {
   const location = useLocation() // Defina aqui fora
@@ -16,12 +16,12 @@ const Rotas = () => {
   return (
     <>
       {/* Renderiza o Header em todas as páginas, exceto nas rotas especificadas */}
-      {location.pathname !== "/perfil" &&
-        location.pathname !== "/perfilmodal" &&
-        location.pathname !== "/perfilEntrega" &&
-        location.pathname !== "/perfilPagamento" &&
-        location.pathname !== "/perfilconfirmacao" &&
-        location.pathname !== "/perfilcarrinho" && <Header />}
+      {location.pathname !== '/perfil' &&
+        location.pathname !== '/perfilmodal' &&
+        location.pathname !== '/perfilEntrega' &&
+        location.pathname !== '/perfilPagamento' &&
+        location.pathname !== '/perfilconfirmacao' &&
+        location.pathname !== '/perfilcarrinho' && <Header />}
 
       <Routes>
         <Route path="/" element={<Home />} />

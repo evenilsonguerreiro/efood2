@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { cores } from "../../styles"
-import { CardButton } from "../../components/Product2/styles"
+import styled from 'styled-components'
+import { cores } from '../../styles'
+import { CardButton } from '../../components/Product2/styles'
 
 export const Overlay = styled.div`
   position: fixed;

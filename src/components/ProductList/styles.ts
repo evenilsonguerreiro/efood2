@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { Props } from "."
+import styled from 'styled-components'
+import { Props } from '.'
 
-export const Container = styled.section<Omit<Props, "title" | "comidas">>`
+export const Container = styled.section<Omit<Props, 'title' | 'comidas'>>`
   background-color: transparent;
 `
 

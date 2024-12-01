@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { cores } from "../../styles"
+import styled from 'styled-components'
+import { cores } from '../../styles'
 
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 
 export const ButtonContainer = styled.button`
   background-color: ${cores.pink};

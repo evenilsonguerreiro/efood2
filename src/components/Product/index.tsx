@@ -1,8 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { Link } from "react-router-dom"
-import { ButtonContainer } from "../Button/styles"
-import Tag from "../Tag"
-import { Card, Descricao, Fundo, Infos, Titulo } from "./styles"
+import { Link } from 'react-router-dom'
+import { ButtonContainer } from '../Button/styles'
+import Tag from '../Tag'
+import { Card, Descricao, Fundo, Infos, Titulo } from './styles'
 
 type Props = {
   title: string

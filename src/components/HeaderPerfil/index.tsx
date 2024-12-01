@@ -4,9 +4,9 @@ import {
   HeaderPerfilLogo,
   HeaderPerfillogo2,
   HeaderPerfilLogo3
-} from "./styles"
+} from './styles'
 
-import logo from "../../assets/imagem/logo (1).png"
+import logo from '../../assets/imagem/logo (1).png'
 
 const HeaderPerfil = () => (
   <HeaderPerfilBar>

@@ -1,12 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import {
   Card2,
   CardButton,
   CardDescricao2,
   CardImg,
   CardTitle2
-} from "./styles"
+} from './styles'
 
 type Props = {
   title: string

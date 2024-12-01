@@ -1,12 +1,12 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Footer from "../../components/Footer"
-import HeaderPerfil from "../../components/HeaderPerfil"
-import Hero from "../../components/Hero"
-import ProductList2 from "../../components/ProductList2"
-import Cardapio from "../../models/Cardapio"
+import Footer from '../../components/Footer'
+import HeaderPerfil from '../../components/HeaderPerfil'
+import Hero from '../../components/Hero'
+import ProductList2 from '../../components/ProductList2'
+import Cardapio from '../../models/Cardapio'
 
-import image from "../../assets/imagem/image 3 (3).png"
-import { useState } from "react"
+import image from '../../assets/imagem/image 3 (3).png'
+import { useState } from 'react'
 
 import {
   Content,
@@ -15,58 +15,58 @@ import {
   ModalSpan,
   ModalTitle,
   Overlay
-} from "./styles"
+} from './styles'
 
-import carrinho from "../../assets/imagem/carrinho.png"
-import { CardButton } from "../../components/Product2/styles"
-import { Link } from "react-router-dom"
+import carrinho from '../../assets/imagem/carrinho.png'
+import { CardButton } from '../../components/Product2/styles'
+import { Link } from 'react-router-dom'
 const italiano: Cardapio[] = [
   {
     id: 1,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   },
   {
     id: 2,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   },
   {
     id: 3,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   },
   {
     id: 4,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   },
   {
     id: 5,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   },
   {
     id: 6,
-    title: "Pizza Marguerita",
+    title: 'Pizza Marguerita',
     description:
-      "A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!",
-    button: "Adicionar ao carrinho",
+      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
+    button: 'Adicionar ao carrinho',
     image: image
   }
 ]

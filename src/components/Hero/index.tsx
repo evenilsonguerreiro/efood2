@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { HeroBar } from "./styles"
+import { HeroBar } from './styles'
 
-import apresentacao from "../../assets/imagem/apresentacao.png"
+import apresentacao from '../../assets/imagem/apresentacao.png'
 
 const Hero = () => (
   <HeroBar>

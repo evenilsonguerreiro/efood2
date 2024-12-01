@@ -1,8 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { ButtonContainer, ButtonLink } from "./styles"
+import { ButtonContainer, ButtonLink } from './styles'
 
 type Props = {
-  type: "button" | "link"
+  type: 'button' | 'link'
   title: string
   to?: string
   onClick: () => void
@@ -10,7 +10,7 @@ type Props = {
 }
 
 const Button = ({ type, title, to, onClick, children }: Props) => {
-  if (type === "button") {
+  if (type === 'button') {
     return (
       <ButtonContainer type="button" title={title} onClick={onClick}>
         {children}

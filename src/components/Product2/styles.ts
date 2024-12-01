@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { cores } from "../../styles"
+import styled from 'styled-components'
+import { cores } from '../../styles'
 
 export const Card2 = styled.div`
   position: relative;
