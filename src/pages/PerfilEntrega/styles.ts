@@ -31,7 +31,7 @@ export const BarraLateral = styled.div`
 export const TituloEntrega = styled.span`
   width: 56px;
   height: 19px;
-  text-align:start;
+  text-align: start;
   font-size: 16px;
   font-weight: 700;
   color: ${cores.branco};
@@ -41,6 +41,7 @@ export const TituloEntrega = styled.span`
 export const SubTitulo = styled.p`
   width: 109px;
   height: 16px;
+  text-align: start;
   color: ${cores.branco};
   font-size: 14px;
   margin-bottom: 10px;
@@ -73,6 +74,7 @@ export const Endereco = styled.p`
   color: ${cores.branco};
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: start;
 `
 
 export const Complemento = styled.p`
