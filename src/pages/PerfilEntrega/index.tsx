@@ -14,6 +14,7 @@ import {
   Campo,
   CampoMedio,
   Complemento,
+  DivButtom,
   DivCep,
   Endereco,
   Overlay,
@@ -92,6 +93,7 @@ const PerfilEntrega = () => {
       {showOverlay && (
         <Overlay>
           <Content onClick={handleClose}>
+
             <BarraLateral>
               <TituloEntrega>Entrega</TituloEntrega>
               <SubTitulo>Quem irá receber</SubTitulo>
@@ -101,17 +103,34 @@ const PerfilEntrega = () => {
               <Endereco>Cidade</Endereco>
               <Campo> </Campo>
               <DivCep>
-                <CampoMedio></CampoMedio>
-                <CampoMedio></CampoMedio>
+                <div>
+                  <Endereco>CEP</Endereco>
+                  <CampoMedio></CampoMedio>
+                </div>
+                <div>
+                  <Endereco>Número</Endereco>
+                  <CampoMedio></CampoMedio>
+                </div>
               </DivCep>
               <Complemento>Complemento (opcional)</Complemento>
               <Campo></Campo>
-              <CardButton>
-                <Link className="link" to="/perfilPagamento">
-                  Continuar com o pagamento
-                </Link>
-              </CardButton>
+
+              <DivButtom>
+                <CardButton>
+                  <Link className="link" to="/perfilPagamento">
+                    Continuar com o pagamento
+                  </Link>
+                </CardButton>
+
+                {/* Novo botão abaixo */}
+                <CardButton>
+                  <Link className="link" to="/perfilcarrinho">
+                    Valtar para o carrinho
+                  </Link>
+                </CardButton>
+              </DivButtom>
             </BarraLateral>
+
           </Content>
         </Overlay>
       )}
