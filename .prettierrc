@@ -1,5 +1,11 @@
+
 {
   "trailingComma": "none",
   "semi": false,
-  "sigleQuote": true
+  "singleQuote": true,
+  "endOfLine": "lf"
 }
+
+
+
+

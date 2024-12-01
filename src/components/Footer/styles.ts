@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { cores } from "../../styles"
+import styled from 'styled-components'
+import { cores } from '../../styles'
 
 export const FooterBar = styled.div`
   position: relative;
