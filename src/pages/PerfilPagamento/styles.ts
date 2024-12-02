@@ -72,6 +72,14 @@ export const Endereco = styled.p`
   margin-bottom: 10px;
   text-align: start;
 `
+export const Endereco2 = styled.p`
+  width: 123px;
+  height: 16px;
+  color: ${cores.branco};
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: start;
+`
 export const Complemento = styled.p`
   width: 156px;
   height: 16px;
@@ -83,11 +91,6 @@ export const DivCep = styled.div`
   display: flex;
   justify-content: space-between;
   width: 340px;
-
-  ${Endereco} {
-    width: 123px;
-    height: 24px;
-  }
 `
 export const Campo1 = styled.div`
   width: 228px;

@@ -21,7 +21,8 @@ import {
   DivCartao,
   CampoMedio,
   Complemento,
-  DivButtom
+  DivButtom,
+  Endereco2
 } from './styles'
 import { Content } from '../PerfilModal/styles'
 import { DivCep } from '../PerfilEntrega/styles'
@@ -113,11 +114,11 @@ const PerfilPagamento = () => {
 
               <DivCep>
                 <div>
-                  <Endereco>CEP</Endereco>
+                  <Endereco2>Mês de vencimento</Endereco2>
                   <CampoMedio></CampoMedio>
                 </div>
                 <div>
-                  <Endereco>Número</Endereco>
+                  <Endereco2>Ano de vencimento</Endereco2>
                   <CampoMedio></CampoMedio>
                 </div>
               </DivCep>
