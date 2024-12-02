@@ -34,7 +34,7 @@ export const BarraLateral = styled.div`
   }
 `
 export const TituloEntrega = styled.span`
-  width: 56px;
+  width: 270px;
   height: 19px;
   font-size: 16px;
   font-weight: 700px;
@@ -42,7 +42,7 @@ export const TituloEntrega = styled.span`
   margin-bottom: 10px;
 `
 export const SubTitulo = styled.p`
-  width: 109px;
+  width: 101px;
   height: 16px;
   color: ${cores.branco};
   font-size: 14px;
@@ -65,11 +65,12 @@ export const CampoMedio = styled.div`
   margin-bottom: 16px;
 `
 export const Endereco = styled.p`
-  width: 59px;
+  width: 114px;
   height: 16px;
   color: ${cores.branco};
   font-size: 14px;
   margin-bottom: 10px;
+  text-align: start;
 `
 export const Complemento = styled.p`
   width: 156px;
@@ -82,4 +83,52 @@ export const DivCep = styled.div`
   display: flex;
   justify-content: space-between;
   width: 340px;
+
+  ${Endereco} {
+    width: 123px;
+    height: 24px;
+  }
+`
+export const Campo1 = styled.div`
+  width: 228px;
+  height: 32px;
+  background-color: ${cores.branco};
+`
+export const Campo2 = styled.div`
+  width: 98px;
+  height: 32px;
+  background-color: ${cores.branco};
+`
+export const DivCartao = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  gap: 10px;
+`
+export const DivButtom = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; /* Distância do topo */
+  width: 360px;
+  position: relative;
+  background-color: #000;
+
+  /* Garantir que o CardButton tenha a altura correta e se alinhe corretamente */
+  ${CardButton} {
+    width: 335px;
+    height: 32px;
+    margin-bottom: 30px; /* Distância entre os botões */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ${cores.branco}; /* Você pode customizar conforme necessário */
+    position: absolute;
+    top: 10px;
+    left: 2px;
+  }
+
+  ${CardButton} + ${CardButton} {
+    margin-top: 50px; /* Distância entre os botões */
+  }
 `

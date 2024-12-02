@@ -12,17 +12,21 @@ import { useState } from 'react'
 import {
   BarraLateral,
   Campo,
-  CampoMedio,
-  Complemento,
-  DivCep,
   Endereco,
   Overlay,
   SubTitulo,
-  TituloEntrega
+  TituloEntrega,
+  Campo1,
+  Campo2,
+  DivCartao,
+  CampoMedio,
+  Complemento,
+  DivButtom
 } from './styles'
-import { CardButton } from '../../components/Product2/styles'
-import { Link } from 'react-router-dom'
 import { Content } from '../PerfilModal/styles'
+import { DivCep } from '../PerfilEntrega/styles'
+import { Link } from 'react-router-dom'
+import { CardButton } from '../../components/Product2/styles'
 
 const italiano: Cardapio[] = [
   {
@@ -93,24 +97,47 @@ const PerfilPagamento = () => {
         <Overlay>
           <Content onClick={handleClose}>
             <BarraLateral>
-              <TituloEntrega>Entrega</TituloEntrega>
-              <SubTitulo>Quem irá receber</SubTitulo>
+              <TituloEntrega>Pagamento - Valor a pagar R$ 190,90</TituloEntrega>
+              <SubTitulo>Nome no cartão</SubTitulo>
               <Campo>João Paulo de Souza</Campo>
-              <Endereco>Endereço</Endereco>
-              <Campo></Campo>
-              <Endereco>Cidade</Endereco>
-              <Campo> </Campo>
+              <DivCartao>
+                <div>
+                  <Endereco>Número do cartão</Endereco>
+                  <Campo1></Campo1>
+                </div>
+                <div>
+                  <Endereco>CVV</Endereco>
+                  <Campo2> </Campo2>
+                </div>
+              </DivCartao>
+
               <DivCep>
-                <CampoMedio></CampoMedio>
-                <CampoMedio></CampoMedio>
+                <div>
+                  <Endereco>CEP</Endereco>
+                  <CampoMedio></CampoMedio>
+                </div>
+                <div>
+                  <Endereco>Número</Endereco>
+                  <CampoMedio></CampoMedio>
+                </div>
               </DivCep>
               <Complemento>Complemento (opcional)</Complemento>
               <Campo></Campo>
-              <CardButton>
-                <Link className="link" to="/perfilconfirmacao">
-                  Continuar com o pagamento
-                </Link>
-              </CardButton>
+
+              <DivButtom>
+                <CardButton>
+                  <Link className="link" to="/perfilPagamento">
+                    Finalizar pagamento
+                  </Link>
+                </CardButton>
+
+                {/* Novo botão abaixo */}
+                <CardButton>
+                  <Link className="link" to="/perfilcarrinho">
+                    Voltar para a edição de endereço
+                  </Link>
+                </CardButton>
+              </DivButtom>
             </BarraLateral>
           </Content>
         </Overlay>
