@@ -11,11 +11,7 @@ import { useState } from 'react'
 
 import {
   BarraLateral,
-  Campo,
-  CampoMedio,
-  Complemento,
-  DivCep,
-  Endereco,
+  DivText,
   Overlay,
   SubTitulo,
   TituloEntrega
@@ -93,22 +89,23 @@ const PerfilConfirmacao = () => {
         <Overlay>
           <Content onClick={handleClose}>
             <BarraLateral>
-              <TituloEntrega>Entrega</TituloEntrega>
-              <SubTitulo>Quem irá receber</SubTitulo>
-              <Campo>João Paulo de Souza</Campo>
-              <Endereco>Endereço</Endereco>
-              <Campo></Campo>
-              <Endereco>Cidade</Endereco>
-              <Campo> </Campo>
-              <DivCep>
-                <CampoMedio></CampoMedio>
-                <CampoMedio></CampoMedio>
-              </DivCep>
-              <Complemento>Complemento (opcional)</Complemento>
-              <Campo></Campo>
+              <TituloEntrega>Pedido realizado </TituloEntrega>
+              <DivText>
+                <SubTitulo>
+                  Estamos felizes em informar que seu pedido já está em processo
+                  de preparação e, em breve, será entregue no endereço
+                  fornecido. Gostaríamos de ressaltar que nossos entregadores
+                  não estão autorizados a realizar cobranças extras. Lembre-se
+                  da importância de higienizar as mãos após o recebimento do
+                  pedido, garantindo assim sua segurança e bem-estar durante a
+                  refeição. Esperamos que desfrute de uma deliciosa e agradável
+                  experiência gastronômica. Bom apetite.
+                </SubTitulo>
+              </DivText>
+
               <CardButton>
-                <Link className="link" to="/">
-                  Continuar com o pagamento
+                <Link className="link" to="">
+                  Concluir
                 </Link>
               </CardButton>
             </BarraLateral>

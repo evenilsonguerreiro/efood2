@@ -20,7 +20,7 @@ const Rotas = () => {
         location.pathname !== '/perfilmodal' &&
         location.pathname !== '/perfilEntrega' &&
         location.pathname !== '/perfilPagamento' &&
-        location.pathname !== '/perfilconfirmacao' &&
+        location.pathname !== '/perfilConfirmacao' &&
         location.pathname !== '/perfilcarrinho' && <Header />}
 
       <Routes>

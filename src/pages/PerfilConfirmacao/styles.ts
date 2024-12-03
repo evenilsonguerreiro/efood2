@@ -34,52 +34,24 @@ export const BarraLateral = styled.div`
   }
 `
 export const TituloEntrega = styled.span`
-  width: 56px;
+  width: 219px;
   height: 19px;
   font-size: 16px;
   font-weight: 700px;
   color: ${cores.branco};
   margin-bottom: 10px;
+  text-align: start;
 `
 export const SubTitulo = styled.p`
-  width: 109px;
-  height: 16px;
-  color: ${cores.branco};
-  font-size: 14px;
-  margin-bottom: 10px;
-`
-export const Campo = styled.div`
   width: 344px;
-  height: 32px;
-  font-size: 14px;
-  font-weight: 700px;
-  background-color: ${cores.branco};
-  display: flex;
-  align-items: center;
-  margin-bottom: 16px;
-`
-export const CampoMedio = styled.div`
-  width: 155px;
-  height: 32px;
-  background-color: ${cores.branco};
-  margin-bottom: 16px;
-`
-export const Endereco = styled.p`
-  width: 59px;
-  height: 16px;
+  height: 286px;
   color: ${cores.branco};
   font-size: 14px;
-  margin-bottom: 10px;
+  line-height: 22px;
+  text-align: start;
+  margin-top: 30px;
 `
-export const Complemento = styled.p`
-  width: 156px;
-  height: 16px;
-  color: ${cores.branco};
-  font-size: 14px;
-  margin-bottom: 10px;
-`
-export const DivCep = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 340px;
+export const DivText = styled.div`
+  width: 344px;
+  height: 286px;
 `
