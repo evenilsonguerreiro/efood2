@@ -116,7 +116,7 @@ const PerfilEntrega = () => {
 
               <DivButtom>
                 <CardButton>
-                  <Link className="link" to="/perfilConfirmacao">
+                  <Link className="link" to="/perfilPagamento">
                     Continuar com o pagamento
                   </Link>
                 </CardButton>

@@ -127,7 +127,7 @@ const PerfilPagamento = () => {
 
               <DivButtom>
                 <CardButton>
-                  <Link className="link" to="/perfilPagamento">
+                  <Link className="link" to="/perfilConfirmacao">
                     Finalizar pagamento
                   </Link>
                 </CardButton>
