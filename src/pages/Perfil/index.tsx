@@ -2,10 +2,9 @@
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import ProductList2 from '../../components/ProductList2'
-import Cardapio from '../../models/Cardapio'
-
 import image from '../../assets/imagem/image 3 (3).png'
+import Cardapio from '../../models/Cardapio'
+import ProductList2 from '../../components/ProductList2'
 
 const italiano: Cardapio[] = [
   {

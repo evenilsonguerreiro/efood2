@@ -1,7 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
+import Comidas from '../../models/Comidas'
 import Product from '../Product'
 import { Container, List } from './styles'
-import Comidas from '../../models/Comidas'
 
 export type Props = {
   title?: string

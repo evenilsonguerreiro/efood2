@@ -1,10 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Comidas from '../../models/Comidas'
 import ProductList from '../../components/ProductList'
 
 import imagem from '../../assets/imagem/imagem (1).png'
 import image from '../../assets/imagem/image 1 (1).png'
 import Footer from '../../components/Footer'
+import Comidas from '../../models/Comidas'
 
 const promocoes: Comidas[] = [
   {

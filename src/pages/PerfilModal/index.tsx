@@ -2,9 +2,6 @@
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import ProductList2 from '../../components/ProductList2'
-import Cardapio from '../../models/Cardapio'
-
 import image from '../../assets/imagem/image 3 (3).png'
 import { useState } from 'react'
 
@@ -20,7 +17,9 @@ import {
 import carrinho from '../../assets/imagem/carrinho.png'
 import { CardButton } from '../../components/Product2/styles'
 import { Link } from 'react-router-dom'
-const italiano: Cardapio[] = [
+import Cardapio from '../../models/Cardapio'
+import ProductList2 from '../../components/ProductList2'
+export const italiano: Cardapio[] = [
   {
     id: 1,
     title: 'Pizza Marguerita',
