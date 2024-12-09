@@ -2,14 +2,14 @@
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import image from '../../assets/imagem/image 3 (3).png'
+import image from '../../assets/imagem/image 3 (2).png'
 import produto1 from '../../assets/imagem/produto1.png'
 import { useState } from 'react'
 import { BarraLateral, Content, Overlay, Precos } from './styles'
 import { CardButton } from '../../components/Product2/styles'
 import { Link } from 'react-router-dom'
-import Cardapio from '../../models/Cardapio'
 import ProductList2 from '../../components/ProductList2'
+import { Cardapio } from '../Perfil'
 
 export const italiano: Cardapio[] = [
   {

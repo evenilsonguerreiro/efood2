@@ -1,73 +1,40 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/react-in-jsx-scope */
+import { useEffect, useState } from 'react'
+import Footer from '../../components/Footer'
 import ProductList from '../../components/ProductList'
 
-import imagem from '../../assets/imagem/imagem (1).png'
-import image from '../../assets/imagem/image 1 (1).png'
-import Footer from '../../components/Footer'
-import Comidas from '../../models/Comidas'
+export interface Comidas {
+    id: number
+    titulo: string
+    descricao: string
+    capa: string
+    cardapio: Array<{
+    foto: string
+    preco: number
+    nome: string
+    descricao: string
+    porcao: string
+  }>
+}
 
-const promocoes: Comidas[] = [
-  {
-    id: 1,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['destaque', 'Italiano'],
-    button: 'Saiba mais',
-    image: imagem
-  },
-  {
-    id: 2,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['Italiano'],
-    button: 'Saiba mais',
-    image: image
-  },
-  {
-    id: 3,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['Italiano'],
-    button: 'Saiba mais',
-    image: image
-  },
-  {
-    id: 4,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['Italiano'],
-    button: 'Saiba mais',
-    image: image
-  },
-  {
-    id: 5,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['Italiano'],
-    button: 'Saiba mais',
-    image: image
-  },
-  {
-    id: 6,
-    title: 'hioki sushi',
-    description:
-      'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão sem sair do lar com nosso delivery!',
-    infos: ['Italiano'],
-    button: 'Saiba mais',
-    image: image
-  }
-]
+const Home = () => {
+  const [promocoes, setPromocoes] = useState<Comidas[]>([])
 
-const Home = () => (
-  <>
-    <header />
-    <ProductList comidas={promocoes} />
-    <Footer />
-  </>
-)
+  useEffect(() => {
+    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
+      .then((res) => res.json())
+      .then((res) => setPromocoes(res))
+  }, [])
+
+  return (
+    <>
+      <header />
+      <ProductList comidas={promocoes} />
+      <Footer />
+    </>
+  )
+}
+
 export default Home
+

@@ -1,68 +1,35 @@
 /* eslint-disable react/react-in-jsx-scope */
+import { useEffect, useState } from 'react'
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import image from '../../assets/imagem/image 3 (3).png'
-import Cardapio from '../../models/Cardapio'
 import ProductList2 from '../../components/ProductList2'
+import { italiano } from '../PerfilModal'
 
-const italiano: Cardapio[] = [
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  },
-  {
-    id: 1,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  }
-]
+export type Cardapio = {
+  id: number
+  title: string
+  description: string
+  button: string
+  image: string
+}
 
-const Perfil = () => (
-  <>
-    <HeaderPerfil />
-    <Hero />
-    <ProductList2 cardapios={italiano} />
-    <Footer />
-  </>
-)
+export const Perfil = () => {
+  const[cardapio, setCardapio] = useState<Cardapio[]>([])
+
+  useEffect(() => {
+    fetch('https://fake-api-tau.vercel.app/api/efood/restaurantes')
+    .then((res) => res.json())
+    .then((res) => setCardapio(res))
+  }, [])
+  return (
+    <>
+      <HeaderPerfil />
+      <Hero />
+      <ProductList2 cardapios={italiano} />
+      <Footer />
+    </>
+  )
+}
+
 export default Perfil

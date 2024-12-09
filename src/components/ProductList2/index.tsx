@@ -1,6 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/react-in-jsx-scope */
-import Cardapio from '../../models/Cardapio'
+import { Cardapio } from '../../pages/Perfil'
 import Product2 from '../Product2'
 import { Container } from '../ProductList/styles'
 import { List2 } from './styles'
