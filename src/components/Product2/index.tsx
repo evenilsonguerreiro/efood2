@@ -8,20 +8,19 @@ import {
   CardTitle2
 } from './styles'
 
-// Definir o tipo da prop 'button' para aceitar um array de objetos
 type ButtonProps = {
-  foto: string;
-  preco: number;
-  nome: string;
-  descricao: string;
-  porcao: string;
+  foto: string
+  preco: number
+  nome: string
+  descricao: string
+  porcao: string
 }
 
 type Props = {
-  title: string;
-  image: string;
-  description: string;
-  button: ButtonProps[]; // Agora 'button' é um array de objetos
+  title: string
+  image: string
+  description: string
+  button: ButtonProps[]
 }
 
 const Product2 = ({ title, image, description, button }: Props) => (
@@ -34,7 +33,7 @@ const Product2 = ({ title, image, description, button }: Props) => (
         {button.map((item, index) => (
           <CardButton key={index}>
             <Link className="link" to="/perfilmodal">
-              {item.nome}  {/* Exibindo o nome de cada item do cardápio */}
+              {item.nome}
             </Link>
           </CardButton>
         ))}
