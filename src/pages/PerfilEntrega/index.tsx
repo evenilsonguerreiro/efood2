@@ -23,12 +23,10 @@ import { Content } from '../PerfilEntrega/styles'
 import ProductList2 from '../../components/ProductList2'
 import { Cardapio } from '../Perfil'
 
-// Corrigido para garantir a consistência com a estrutura de Cardapio
-
 export const italiano: Cardapio[] = [
   {
     id: 1,
-    titulo: 'Pizza Marguerita', // Corrigido para 'titulo'
+    titulo: 'Pizza Marguerita',
     descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
     cardapio: [
@@ -37,14 +35,14 @@ export const italiano: Cardapio[] = [
         preco: 25.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Pizza deliciosa!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
+    capa: image
   },
   {
     id: 2,
-    titulo: 'Pizza Calabresa', // Corrigido para 'titulo'
+    titulo: 'Pizza Calabresa',
     descricao:
       'Pizza de calabresa com cebola, muito saborosa e ideal para quem adora um toque picante!',
     cardapio: [
@@ -53,10 +51,10 @@ export const italiano: Cardapio[] = [
         preco: 28.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Calabresa saborosa!',
-        porcao: 'Grande',
-      },
+        porcao: 'Grande'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
+    capa: image
   },
   {
     id: 3,
@@ -69,14 +67,14 @@ export const italiano: Cardapio[] = [
         preco: 35.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Quatro queijos irresistíveis!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
+    capa: image
   },
   {
     id: 4,
-    titulo: 'Pizza de Frango com Catupiry', // Corrigido para 'titulo'
+    titulo: 'Pizza de Frango com Catupiry',
     descricao:
       'Pizza de frango com catupiry, uma combinação perfeita de cremosidade e sabor!',
     cardapio: [
@@ -85,14 +83,14 @@ export const italiano: Cardapio[] = [
         preco: 30.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Frango com catupiry!',
-        porcao: 'Grande',
-      },
+        porcao: 'Grande'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
+    capa: image
   },
   {
     id: 5,
-    titulo: 'Pizza de Frutos do Mar', // Corrigido para 'titulo'
+    titulo: 'Pizza de Frutos do Mar',
     descricao:
       'Pizza com camarões frescos, mariscos e um toque de limão siciliano.',
     cardapio: [
@@ -101,10 +99,10 @@ export const italiano: Cardapio[] = [
         preco: 40.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Frutos do mar!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
+    capa: image
   },
   {
     id: 6,
@@ -117,11 +115,11 @@ export const italiano: Cardapio[] = [
         preco: 32.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Pizza vegana deliciosa!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido para 'capa'
-  },
+    capa: image
+  }
 ]
 const PerfilEntrega = () => {
   const [showOverlay, setShowOverlay] = useState(true)
