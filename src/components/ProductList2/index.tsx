@@ -1,27 +1,27 @@
 /* eslint-disable react/react-in-jsx-scope */
-import Product2 from '../Product2';
-import { Container } from '../ProductList/styles';
-import { List2 } from './styles';
+import Product2 from '../Product2'
+import { Container } from '../ProductList/styles'
+import { List2 } from './styles'
 
 export interface ItemCardapio {
-  foto: string;
-  preco: number;
+  foto: string
+  preco: number
   nome: string;
-  descricao: string;
-  porcao: string;
+  descricao: string
+  porcao: string
 }
 
 export interface Cardapio {
-  id: number;
-  titulo: string;
-  descricao: string;
-  capa: string;
-  cardapio: ItemCardapio[]; // Tipo corrigido para um array de objetos
+  id: number
+  titulo: string
+  descricao: string
+  capa: string
+  cardapio: ItemCardapio[]
 }
 
 export type Props = {
-  cardapios: Cardapio[];
-};
+  cardapios: Cardapio[]
+}
 
 const ProductList2 = ({ cardapios }: Props) => (
   <Container>
@@ -41,5 +41,5 @@ const ProductList2 = ({ cardapios }: Props) => (
   </Container>
 );
 
-export default ProductList2;
+export default ProductList2
 
