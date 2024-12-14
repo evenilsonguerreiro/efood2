@@ -1,5 +1,4 @@
 /* eslint-disable react/react-in-jsx-scope */
-
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
@@ -31,51 +30,99 @@ import { Cardapio } from '../Perfil'
 export const italiano: Cardapio[] = [
   {
     id: 1,
-    title: 'Pizza Marguerita',
-    description:
+    titulo: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    cardapio: [
+      {
+        foto: image,
+        preco: 25.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Pizza deliciosa!',
+        porcao: 'Média'
+      }
+    ],
+    capa: image
   },
   {
     id: 2,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza Calabresa',
+    descricao:
+      'Pizza de calabresa com cebola, muito saborosa e ideal para quem adora um toque picante!',
+    cardapio: [
+      {
+        foto: image,
+        preco: 28.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Calabresa saborosa!',
+        porcao: 'Grande'
+      }
+    ],
+    capa: image
   },
   {
     id: 3,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza 4 Queijos',
+    descricao:
+      'A pizza clássica de 4 queijos, com muçarela, parmesão, gorgonzola e provolone.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 35.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Quatro queijos irresistíveis!',
+        porcao: 'Média'
+      }
+    ],
+    capa: image
   },
   {
     id: 4,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza de Frango com Catupiry',
+    descricao:
+      'Pizza de frango com catupiry, uma combinação perfeita de cremosidade e sabor!',
+    cardapio: [
+      {
+        foto: image,
+        preco: 30.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Frango com catupiry!',
+        porcao: 'Grande'
+      }
+    ],
+    capa: image
   },
   {
     id: 5,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza de Frutos do Mar',
+    descricao:
+      'Pizza com camarões frescos, mariscos e um toque de limão siciliano.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 40.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Frutos do mar!',
+        porcao: 'Média'
+      }
+    ],
+    capa: image
   },
   {
     id: 6,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza Vegana',
+    descricao:
+      'Pizza sem produtos de origem animal, com uma deliciosa combinação de legumes frescos.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 32.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Pizza vegana deliciosa!',
+        porcao: 'Média'
+      }
+    ],
+    capa: image
   }
 ]
 

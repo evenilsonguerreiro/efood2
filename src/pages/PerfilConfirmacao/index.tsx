@@ -1,73 +1,114 @@
 /* eslint-disable react/react-in-jsx-scope */
-
 import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
 import image from '../../assets/imagem/image 3 (2).png'
+import produto1 from '../../assets/imagem/produto1.png'
 import { useState } from 'react'
-
-import {
-  BarraLateral,
-  DivText,
-  Overlay,
-  SubTitulo,
-  TituloEntrega
-} from './styles'
+import { BarraLateral, Content, Overlay, Precos } from './styles'
 import { CardButton } from '../../components/Product2/styles'
 import { Link } from 'react-router-dom'
-import { Content } from '../PerfilModal/styles'
 import ProductList2 from '../../components/ProductList2'
 import { Cardapio } from '../Perfil'
 
+// Corrigindo para usar as propriedades corretas de acordo com a interface Cardapio
 export const italiano: Cardapio[] = [
   {
     id: 1,
-    title: 'Pizza Marguerita',
-    description:
+    titulo: 'Pizza Marguerita', // Corrigido para 'titulo'
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    cardapio: [
+      {
+        foto: image,
+        preco: 25.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Pizza deliciosa!',
+        porcao: 'Média',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
   },
   {
     id: 2,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza Calabresa', // Corrigido para 'titulo'
+    descricao:
+      'Pizza de calabresa com cebola, muito saborosa e ideal para quem adora um toque picante!',
+    cardapio: [
+      {
+        foto: image,
+        preco: 28.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Calabresa saborosa!',
+        porcao: 'Grande',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
   },
   {
     id: 3,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza 4 Queijos', // Corrigido para 'titulo'
+    descricao:
+      'A pizza clássica de 4 queijos, com muçarela, parmesão, gorgonzola e provolone.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 35.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Quatro queijos irresistíveis!',
+        porcao: 'Média',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
   },
   {
     id: 4,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza de Frango com Catupiry', // Corrigido para 'titulo'
+    descricao:
+      'Pizza de frango com catupiry, uma combinação perfeita de cremosidade e sabor!',
+    cardapio: [
+      {
+        foto: image,
+        preco: 30.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Frango com catupiry!',
+        porcao: 'Grande',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
   },
   {
     id: 5,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
+    titulo: 'Pizza de Frutos do Mar', // Corrigido para 'titulo'
+    descricao:
+      'Pizza com camarões frescos, mariscos e um toque de limão siciliano.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 40.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Frutos do mar!',
+        porcao: 'Média',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
   },
   {
     id: 6,
-    title: 'Pizza Marguerita',
-    description:
-      'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    button: 'Adicionar ao carrinho',
-    image: image
-  }
+    titulo: 'Pizza Vegana', // Corrigido para 'titulo'
+    descricao:
+      'Pizza sem produtos de origem animal, com uma deliciosa combinação de legumes frescos.',
+    cardapio: [
+      {
+        foto: image,
+        preco: 32.0,
+        nome: 'Adicionar ao carrinho',
+        descricao: 'Pizza vegana deliciosa!',
+        porcao: 'Média',
+      },
+    ],
+    capa: image, // Corrigido para 'capa'
+  },
 ]
 
 const PerfilConfirmacao = () => {
@@ -88,23 +129,16 @@ const PerfilConfirmacao = () => {
         <Overlay>
           <Content onClick={handleClose}>
             <BarraLateral>
-              <TituloEntrega>Pedido realizado </TituloEntrega>
-              <DivText>
-                <SubTitulo>
-                  Estamos felizes em informar que seu pedido já está em processo
-                  de preparação e, em breve, será entregue no endereço
-                  fornecido. Gostaríamos de ressaltar que nossos entregadores
-                  não estão autorizados a realizar cobranças extras. Lembre-se
-                  da importância de higienizar as mãos após o recebimento do
-                  pedido, garantindo assim sua segurança e bem-estar durante a
-                  refeição. Esperamos que desfrute de uma deliciosa e agradável
-                  experiência gastronômica. Bom apetite.
-                </SubTitulo>
-              </DivText>
-
+              <img className="img1" src={produto1} alt="" />
+              <img className="img2" src={produto1} alt="" />
+              <img className="img3" src={produto1} alt="" />
+              <Precos>
+                <h4>Valor total</h4>
+                <span>R$ 178,90</span>
+              </Precos>
               <CardButton>
-                <Link className="link" to="">
-                  Concluir
+                <Link className="link" to="/perfilEntrega">
+                  Continuar com a entrega
                 </Link>
               </CardButton>
             </BarraLateral>
@@ -116,3 +150,4 @@ const PerfilConfirmacao = () => {
 }
 
 export default PerfilConfirmacao
+

@@ -12,7 +12,6 @@ export const HeroBar = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     top: 20px;
     color: white;
   }

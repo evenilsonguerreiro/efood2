@@ -116,3 +116,9 @@ export const DivButtom = styled.div`
     margin-top: 50px; /* Distância entre os botões */
   }
 `
+export const Content = styled.div`
+  padding: 20px;
+  text-align: center;
+`
+
+
