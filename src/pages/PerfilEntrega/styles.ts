@@ -120,5 +120,3 @@ export const Content = styled.div`
   padding: 20px;
   text-align: center;
 `
-
-

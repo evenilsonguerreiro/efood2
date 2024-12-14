@@ -21,7 +21,6 @@ export type Props = {
   comidas: Comidas[]
 }
 
-
 const ProductList = ({ comidas }: Props) => (
   <Container>
     <div className="container">
@@ -32,7 +31,7 @@ const ProductList = ({ comidas }: Props) => (
             title={comida.titulo}
             description={comida.descricao}
             image={comida.capa}
-            infos={comida.cardapio.map(item => item.nome)}
+            infos={comida.cardapio.map((item) => item.nome)}
             button="Ver mais"
           />
         ))}
@@ -40,6 +39,5 @@ const ProductList = ({ comidas }: Props) => (
     </div>
   </Container>
 )
-
 
 export default ProductList

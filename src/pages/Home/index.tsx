@@ -5,11 +5,11 @@ import Footer from '../../components/Footer'
 import ProductList from '../../components/ProductList'
 
 export interface Comidas {
-    id: number
-    titulo: string
-    descricao: string
-    capa: string
-    cardapio: Array<{
+  id: number
+  titulo: string
+  descricao: string
+  capa: string
+  cardapio: Array<{
     foto: string
     preco: number
     nome: string
@@ -37,4 +37,3 @@ const Home = () => {
 }
 
 export default Home
-

@@ -32,10 +32,10 @@ export const italiano: Cardapio[] = [
         preco: 25.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Pizza deliciosa!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
+    capa: image // Corrigido de 'image' para 'capa'
   },
   {
     id: 2,
@@ -48,10 +48,10 @@ export const italiano: Cardapio[] = [
         preco: 28.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Calabresa saborosa!',
-        porcao: 'Grande',
-      },
+        porcao: 'Grande'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
+    capa: image // Corrigido de 'image' para 'capa'
   },
   {
     id: 3,
@@ -64,10 +64,10 @@ export const italiano: Cardapio[] = [
         preco: 35.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Quatro queijos irresistíveis!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
+    capa: image // Corrigido de 'image' para 'capa'
   },
   {
     id: 4,
@@ -80,10 +80,10 @@ export const italiano: Cardapio[] = [
         preco: 30.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Frango com catupiry!',
-        porcao: 'Grande',
-      },
+        porcao: 'Grande'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
+    capa: image // Corrigido de 'image' para 'capa'
   },
   {
     id: 5,
@@ -96,10 +96,10 @@ export const italiano: Cardapio[] = [
         preco: 40.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Frutos do mar!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
+    capa: image // Corrigido de 'image' para 'capa'
   },
   {
     id: 6,
@@ -112,11 +112,11 @@ export const italiano: Cardapio[] = [
         preco: 32.0,
         nome: 'Adicionar ao carrinho',
         descricao: 'Pizza vegana deliciosa!',
-        porcao: 'Média',
-      },
+        porcao: 'Média'
+      }
     ],
-    capa: image, // Corrigido de 'image' para 'capa'
-  },
+    capa: image // Corrigido de 'image' para 'capa'
+  }
 ]
 const PerfilModal = () => {
   const [showOverlay, setShowOverlay] = useState(true)

@@ -6,7 +6,7 @@ import { List2 } from './styles'
 export interface ItemCardapio {
   foto: string
   preco: number
-  nome: string;
+  nome: string
   descricao: string
   porcao: string
 }
@@ -39,7 +39,6 @@ const ProductList2 = ({ cardapios }: Props) => (
       </List2>
     </div>
   </Container>
-);
+)
 
 export default ProductList2
-
