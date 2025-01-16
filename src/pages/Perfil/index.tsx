@@ -1,10 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 
 import { useEffect, useState } from 'react'
-import Footer from '../../components/Footer'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
 import ProductList2 from '../../components/ProductList2'
+import Footer2 from '../../components/Footer2'
 
 export interface Cardapio {
   id: number
@@ -35,7 +35,7 @@ export const Perfil = () => {
       <HeaderPerfil />
       <Hero />
       <ProductList2 cardapios={italiano} />
-      <Footer />
+      <Footer2 />
     </>
   )
 }

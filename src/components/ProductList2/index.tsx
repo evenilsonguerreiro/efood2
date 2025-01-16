@@ -25,7 +25,7 @@ export type Props = {
 
 const ProductList2 = ({ cardapios }: Props) => (
   <Container>
-    <div className="container">
+    <div className="container2">
       <List2>
         {cardapios.map((cardapio) => (
           <Product2

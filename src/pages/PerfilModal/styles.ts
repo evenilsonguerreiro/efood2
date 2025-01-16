@@ -18,6 +18,7 @@ export const ModalFundo = styled.div`
   position: relative;
   width: 1024px;
   height: 344px;
+  top: 490px;
   display: flex;
   background-color: ${cores.pink};
 
