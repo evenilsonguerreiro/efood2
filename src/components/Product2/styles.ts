@@ -12,7 +12,7 @@ export const Card2 = styled.div`
 export const CardImg = styled.div`
   img {
     position: absolute;
-    top: 10px;
+    top: 8px;
     left: 8px;
     width: 304px;
     height: 160px;
@@ -26,7 +26,7 @@ export const CardTitle2 = styled.h3`
   line-height: 18px;
   color: ${cores.branco};
   position: absolute;
-  top: 178px;
+  top: 175px;
   left: 8px;
 `
 export const CardDescricao2 = styled.p`
@@ -37,7 +37,7 @@ export const CardDescricao2 = styled.p`
   line-height: 20px;
   font-weight: 400;
   position: absolute;
-  top: 213px;
+  top: 190px;
   left: 8px;
 `
 export const CardButton = styled.button`
