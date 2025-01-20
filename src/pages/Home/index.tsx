@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/react-in-jsx-scope */
+
 import { useEffect, useState } from 'react'
 import Footer from '../../components/Footer'
 import ProductList from '../../components/ProductList'
@@ -9,6 +10,8 @@ export interface Comidas {
   titulo: string
   descricao: string
   capa: string
+  tipo: string
+  destacado: boolean
   cardapio: Array<{
     foto: string
     preco: number

@@ -49,7 +49,9 @@ export const Descricao = styled.p`
 export const Infos = styled.div`
   width: 121px;
   height: 26px;
+  display: flex;
   position: absolute;
   top: 10px;
   left: 300px;
+  gap: 10px;
 `

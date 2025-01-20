@@ -1,23 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable react/react-in-jsx-scope */
-import Product from '../Product'
 import { Container, List } from './styles'
-
-export interface Comidas {
-  id: number
-  titulo: string
-  descricao: string
-  capa: string
-  cardapio: Array<{
-    foto: string
-    preco: number
-    nome: string
-    descricao: string
-    porcao: string
-  }>
-}
+import Product from '../Product'
+import { Comidas } from '../../pages/Home'
 
 export type Props = {
-  title?: string
   comidas: Comidas[]
 }
 
@@ -31,7 +18,7 @@ const ProductList = ({ comidas }: Props) => (
             title={comida.titulo}
             description={comida.descricao}
             image={comida.capa}
-            infos={comida.cardapio.map((item) => item.nome)}
+            infos={index === 0 ? ['Destaque', comida.tipo] : [comida.tipo]}
             button="Ver mais"
           />
         ))}

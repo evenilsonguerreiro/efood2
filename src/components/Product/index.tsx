@@ -13,24 +13,23 @@ type Props = {
 }
 
 const Product = ({ title, image, description, infos, button }: Props) => (
-  <>
-    <Card>
-      <img src={image} />
-      <Infos>
-        {infos.map((info) => (
-          <Tag key={info}>{info}</Tag>
-        ))}
-      </Infos>
-      <Fundo>
-        <Titulo>{title}</Titulo>
-        <Descricao>{description}</Descricao>
-        <ButtonContainer>
-          <Link className="link2" to="/perfil">
-            {button}
-          </Link>
-        </ButtonContainer>
-      </Fundo>
-    </Card>
-  </>
+  <Card>
+    <img src={image} alt={title} />
+    <Infos>
+      {infos.map((info) => (
+        <Tag key={info}>{info}</Tag>
+      ))}
+    </Infos>
+    <Fundo>
+      <Titulo>{title}</Titulo>
+      <Descricao>{description}</Descricao>
+      <ButtonContainer>
+        <Link className="link2" to="/perfil">
+          {button}
+        </Link>
+      </ButtonContainer>
+    </Fundo>
+  </Card>
 )
+
 export default Product
