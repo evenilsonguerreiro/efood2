@@ -128,10 +128,15 @@ const PerfilModal = () => {
   return (
     <>
       <HeaderPerfil />
-      <Hero image={''} title={''} subtitle={''} />
+      {italiano.length > 0 && (
+        <Hero
+          image={italiano[0].capa}
+          title={italiano[0].titulo}
+          subtitle={italiano[0].descricao}
+        />
+      )}
       <ProductList2 cardapios={italiano} />
       <Footer />
-
       {showOverlay && (
         <Overlay>
           <Content onClick={handleClose}>
