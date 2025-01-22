@@ -19,7 +19,7 @@ export const CardImg = styled.div`
   }
 `
 export const CardTitle2 = styled.h3`
-  width: 200px;
+  width: 250px;
   height: 19px;
   font-size: 16px;
   font-weight: 900;

@@ -120,7 +120,7 @@ const PerfilCarrinho = () => {
   return (
     <>
       <HeaderPerfil />
-      <Hero />
+      <Hero image={''} title={''} subtitle={''} />
       <ProductList2 cardapios={italiano} />
       <Footer />
 

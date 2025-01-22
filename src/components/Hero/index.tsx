@@ -1,15 +1,18 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { HeroBar } from './styles'
-import hero from '../../assets/imagem/hero.png'
 
-const Hero = () => (
+type HeroProps = {
+  image: string // URL da imagem
+  title: string // Título principal (ex.: "Italiana")
+  subtitle: string // Subtítulo (ex.: "La Dolce Vita Trattoria")
+}
+
+const Hero = ({ image, title, subtitle }: HeroProps) => (
   <HeroBar>
-    <img src={hero} alt="imagem apresentação" />
-    <div className="container">
-      <div className="text-overlay">
-        <p>Italiana</p>
-        <span>La Dolce Vita Trattoria</span>
-      </div>
+    <img src={image} alt="Imagem de apresentação" />
+    <div className="text-overlay">
+      <p>{title}</p>
+      <span>{subtitle}</span>
     </div>
   </HeroBar>
 )
