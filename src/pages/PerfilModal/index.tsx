@@ -131,8 +131,8 @@ const PerfilModal = () => {
       {italiano.length > 0 && (
         <Hero
           image={italiano[0].capa}
-          title={italiano[0].titulo}
-          subtitle={italiano[0].descricao}
+          title="Italiana"
+          subtitle={italiano[0].titulo}
         />
       )}
       <ProductList2 cardapios={italiano} />

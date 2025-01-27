@@ -15,6 +15,7 @@ export const Card = styled.div`
     height: 217px;
     top: 440px;
     left: 171px;
+    object-fit: cover;
   }
 `
 
