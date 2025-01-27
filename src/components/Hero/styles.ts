@@ -45,7 +45,7 @@ export const HeroBar = styled.div`
     span {
       width: 676px;
       height: 33px;
-      font-size: 16px;
+      font-size: 32px;
       top: 160px;
       left: 180px;
       position: absolute;

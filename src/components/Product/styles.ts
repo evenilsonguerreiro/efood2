@@ -2,11 +2,11 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Card = styled.div`
-  background-color: ${cores.branco};
+  background-color: ${cores.branco2};
   width: 472px;
   height: 398px;
   top: 80px;
-  left: 171px;
+  left: 181px;
   border: 1px solid ${cores.pink};
   position: relative;
 

@@ -34,10 +34,11 @@ export const Perfil = () => {
         setItaliano(data)
         // Usar o primeiro restaurante para preencher o Hero
         if (data.length > 0) {
+          const restaurant = data[0] // Captura o primeiro restaurante da lista
           setHeroData({
-            image: data[0].capa, // URL da imagem do restaurante
-            title: data[0].titulo, // Exemplo: "Italiana"
-            subtitle: data[0].descricao // Exemplo: "La Dolce Vita Trattoria"
+            image: restaurant.capa, // URL da imagem do restaurante
+            title: 'Italiana', // Título da cozinha ou tipo do restaurante
+            subtitle: restaurant.titulo // Subtítulo sendo o nome do restaurante (ex: "Bella Tovora Italiana")
           })
         }
       })
@@ -49,8 +50,8 @@ export const Perfil = () => {
       <HeaderPerfil />
       <Hero
         image={heroData.image}
-        title={heroData.title}
-        subtitle={heroData.subtitle}
+        title={heroData.title} // Agora, título é fixo como 'Italiana'
+        subtitle={heroData.subtitle} // Agora, o subtítulo é o nome do restaurante
       />
       <ProductList2 cardapios={italiano} />
       <Footer2 />
