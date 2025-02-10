@@ -7,6 +7,7 @@ export const FooterBar = styled.div`
   flex-direction: column;
   align-items: center;
   top: 1850px;
+  max-width: 1366px;
   width: 100%;
   height: 298px;
   background-color: ${cores.branco};
