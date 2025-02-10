@@ -3,10 +3,9 @@ import { cores } from '../../styles'
 
 export const HeaderBar = styled.header`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
   width: 100%;
   height: 384px;
   background-color: ${cores.branco};

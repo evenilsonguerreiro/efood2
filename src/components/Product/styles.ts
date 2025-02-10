@@ -6,7 +6,6 @@ export const Card = styled.div`
   width: 472px;
   height: 398px;
   top: 80px;
-  left: 181px;
   border: 1px solid ${cores.pink};
   position: relative;
 

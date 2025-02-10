@@ -39,10 +39,11 @@ export const EstiloGlobal = createGlobalStyle`
   }
 
   .container {
-    width: 1024px;
+    display: flex;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    max-width: 1024px; /* Largura máxima */
+    width: 100%;
     height: 1290px;
-    top: 440px;
-    left: 171px;
   }
 
   .container2 {
