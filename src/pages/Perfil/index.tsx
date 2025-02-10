@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
 import ProductList2 from '../../components/ProductList2'
-import Footer2 from '../../components/Footer2'
+import Footer from '../../components/Footer'
 
 export interface Cardapio {
   id: number
@@ -54,7 +54,7 @@ export const Perfil = () => {
         subtitle={heroData.subtitle} // Agora, o subtítulo é o nome do restaurante
       />
       <ProductList2 cardapios={italiano} />
-      <Footer2 />
+      <Footer className="footer-perfil" />
     </>
   )
 }

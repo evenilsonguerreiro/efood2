@@ -26,7 +26,6 @@ type Props = {
 
 const Product2 = ({ title, image, description, button }: Props) => (
   <>
-    {/* Listagem dos pratos dentro do card */}
     {button.map((item, index) => (
       <Card2 key={index}>
         <CardImg>

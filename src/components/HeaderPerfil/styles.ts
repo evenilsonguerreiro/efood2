@@ -3,39 +3,34 @@ import { cores } from '../../styles'
 
 export const HeaderPerfilBar = styled.div`
   width: 100%;
-  height: 280px;
+  height: 186px;
   background-color: ${cores.branco};
-  position: relative;
+  display: flex;
+  justify-content: center; /* Garante que o conteúdo fique centralizado */
+  align-items: center;
 `
-
+export const HeaderPerfilContent = styled.div`
+  display: flex;
+  justify-content: space-between; /* Ajusta os elementos dentro da linha */
+  align-items: center;
+  width: 100%;
+  max-width: 1024px; /* Ajuste para a largura máxima do container */
+`
 export const HeaderPerfillogo2 = styled.div`
-  width: 109px;
-  height: 21px;
-  top: 59px;
-  left: 171px;
-  position: absolute;
+  width: 125px;
+  height: 57px;
   font-size: 18px;
   color: ${cores.pink};
 `
-
 export const HeaderPerfilLogo = styled.div`
+  display: flex;
+  justify-content: center; /* Garante que a logo fique centralizada */
   width: 125px;
   height: 57px;
-  top: 59px;
-  left: 621px;
-  position: absolute;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
 `
-
 export const HeaderPerfilLogo3 = styled.div`
-  width: 256px;
-  height: 21px;
-  top: 59px;
-  left: 939px;
-  position: absolute;
+  width: 125px;
+  height: 57px;
   font-size: 18px;
   color: ${cores.pink};
 `

@@ -24,32 +24,22 @@ export const EstiloGlobal = createGlobalStyle`
     text-decoration: none;
   }
 
-  .containerPerfil {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1024px;
-    width: 100%;
-    margin: auto;
-  }
-
   body {
     background-color: #fff;
     font-size: 40px;
   }
 
   .container {
+    max-width: 1028px;
+    width: 100%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+  }
+
+  .container2 {
     display: flex;
     margin: 0 auto; /* Centraliza horizontalmente */
     max-width: 1024px; /* Largura máxima */
     width: 100%;
     height: 1290px;
-  }
-
-  .container2 {
-    width: 1024px;
-    height: 708px;
-    top: 498px;
-    left: 171px;
   }
 `

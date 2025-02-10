@@ -7,10 +7,13 @@ export const FooterBar = styled.div`
   flex-direction: column;
   align-items: center;
   width: 100%;
-  width: 100%;
   height: 298px;
-  margin-top: 100px;
   background-color: ${cores.branco};
+  margin-top: 150px;
+
+  &.footer-perfil {
+    margin-top: 2000px;
+  }
 `
 export const FooterLogo = styled.div`
   img {
