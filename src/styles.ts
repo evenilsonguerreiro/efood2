@@ -4,7 +4,7 @@ export const cores = {
   pink: '#E66767',
   rosa: '#FFF8F2',
   branco: '#FFEBD9',
-  branco2: '#ecf0f1'
+  branco2: '#fff'
 }
 
 export const EstiloGlobal = createGlobalStyle`

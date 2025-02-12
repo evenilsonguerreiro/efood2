@@ -3,17 +3,16 @@ import styled from 'styled-components'
 export const HeroBar = styled.div`
   position: absolute;
   width: 100%;
-  height: 280px; /* Altura total do Hero */
+  height: 280px;
   top: 162px;
-  overflow: hidden; /* Garante que a imagem e o overlay não "escapem" */
+  overflow: hidden;
 
   img {
     width: 100%;
-    height: 100%; /* Ajusta a altura da imagem */
-    object-fit: cover; /* Recorta proporcionalmente */
+    height: 100%;
+    object-fit: cover;
   }
 
-  /* Overlay para escurecer a imagem */
   &::before {
     content: '';
     position: absolute;
@@ -21,8 +20,8 @@ export const HeroBar = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Fundo preto com 40% de opacidade */
-    z-index: 1; /* Coloca o overlay acima da imagem */
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
   }
 
   .text-overlay {
@@ -38,7 +37,7 @@ export const HeroBar = styled.div`
       height: 33px;
       font-size: 32px;
       top: 30px;
-      left: 180px;
+      left: 171px;
       position: absolute;
     }
 
@@ -46,8 +45,8 @@ export const HeroBar = styled.div`
       width: 676px;
       height: 33px;
       font-size: 32px;
-      top: 160px;
-      left: 180px;
+      top: 187px;
+      left: 171px;
       position: absolute;
     }
   }
