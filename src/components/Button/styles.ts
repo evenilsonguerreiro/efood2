@@ -4,7 +4,7 @@ import { cores } from '../../styles'
 import { Link } from 'react-router-dom'
 
 export const ButtonContainer = styled.button`
-  background-color: ${cores.pink};
+  background-color: #000;
   color: ${cores.branco};
   width: 82px;
   height: 24px;

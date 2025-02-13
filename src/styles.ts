@@ -25,14 +25,15 @@ export const EstiloGlobal = createGlobalStyle`
   }
 
   body {
+    margin: 0;
     background-color: #fff;
     font-size: 40px;
   }
 
   .container {
-    max-width: 1028px;
+    max-width: 1024px;
     width: 100%;
-    margin: 0 auto; /* Centraliza horizontalmente */
+    margin: 0 auto;
   }
 
   .container2 {

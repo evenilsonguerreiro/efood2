@@ -1,15 +1,6 @@
 import styled from 'styled-components'
 import { cores } from '../../styles'
 
-export const Lista = styled.div`
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-`
-
 export const Card = styled.div`
   background-color: ${cores.branco2};
   width: 472px;
@@ -45,8 +36,7 @@ export const Descricao = styled.p`
 export const Infos = styled.div`
   position: absolute;
   top: 10px;
-  left: 85%; /* Centraliza horizontalmente */
-  transform: translateX(-50%); /* Ajusta para centralização exata */
+  left: 67%;
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;

@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 import { ButtonContainer } from '../Button/styles'
 import Tag from '../Tag'
-import { Card, Descricao, Fundo, Infos, Lista, Titulo } from './styles'
+import { Card, Descricao, Fundo, Infos, Titulo } from './styles'
 
 type Props = {
   title: string
@@ -13,7 +13,7 @@ type Props = {
 }
 
 const Product = ({ title, image, description, infos, button }: Props) => (
-  <Lista>
+  <div className="container">
     <Card>
       <img src={image} alt={title} />
       <Infos>
@@ -31,7 +31,7 @@ const Product = ({ title, image, description, infos, button }: Props) => (
         </ButtonContainer>
       </Fundo>
     </Card>
-  </Lista>
+  </div>
 )
 
 export default Product
