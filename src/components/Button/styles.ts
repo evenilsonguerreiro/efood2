@@ -12,7 +12,6 @@ export const ButtonContainer = styled.button`
   align-items: center;
   border: none;
   font-weight: 700px;
-  margin-left: 5px;
   text-decoration: none;
   cursor: pointer;
 `
