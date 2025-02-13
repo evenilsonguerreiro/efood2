@@ -37,10 +37,11 @@ export const EstiloGlobal = createGlobalStyle`
   }
 
   .container2 {
-    display: flex;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    max-width: 1024px; /* Largura máxima */
     width: 100%;
-    height: 1290px;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 `

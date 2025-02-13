@@ -13,7 +13,7 @@ export const FooterBar = styled.div`
   margin-top: 150px;
 
   &.footer-perfil {
-    margin-top: 2000px;
+    margin-top: 400px;
   }
 `
 export const FooterLogo = styled.div`

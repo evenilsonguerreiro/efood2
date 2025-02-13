@@ -15,7 +15,6 @@ export const Card = styled.div`
     object-fit: cover;
   }
 `
-
 export const Fundo = styled.div`
   padding: 5px;
 `
