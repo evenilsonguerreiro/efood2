@@ -5,7 +5,8 @@ export const Card = styled.div`
   background-color: ${cores.branco2};
   width: 472px;
   height: 398px;
-  top: 80px;
+  top: 8px;
+  left: 15px;
   border: 1px solid ${cores.pink};
   position: relative;
 
@@ -17,7 +18,6 @@ export const Card = styled.div`
     object-fit: cover;
   }
 `
-
 export const Fundo = styled.div`
   width: 472px;
   height: 181px;
@@ -54,4 +54,9 @@ export const Infos = styled.div`
   top: 10px;
   left: 300px;
   gap: 10px;
+`
+export const Lista = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  height: 400px;
 `

@@ -9,6 +9,7 @@ export const HeaderBar = styled.header`
   width: 100%;
   height: 384px;
   background-color: ${cores.branco};
+  margin-bottom: 100px;
 `
 export const HeaderLogo = styled.div`
   width: 125px;
