@@ -3,6 +3,7 @@ import { cores } from '../../styles'
 
 export const FooterBar = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
   align-items: center;

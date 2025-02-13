@@ -3,6 +3,7 @@ import { cores } from '../../styles'
 
 export const HeaderBar = styled.header`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
