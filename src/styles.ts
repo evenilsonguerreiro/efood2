@@ -34,13 +34,9 @@ export const EstiloGlobal = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-
-    @media (max-width: 1920px) {
-      .container {
-        margin: 0 auto;
-        width: 100%
-      }
-    }
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .container2 {
