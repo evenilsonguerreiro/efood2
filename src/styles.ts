@@ -34,17 +34,11 @@ export const EstiloGlobal = createGlobalStyle`
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 
   .container2 {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 `
