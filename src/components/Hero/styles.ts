@@ -30,7 +30,7 @@ export const HeroBar = styled.div`
     flex-direction: column;
     top: 20px;
     color: white;
-    z-index: 2; /* Garante que o texto fique acima do overlay */
+    z-index: 2;
 
     p {
       width: 300px;
