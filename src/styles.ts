@@ -34,14 +34,7 @@ export const EstiloGlobal = createGlobalStyle`
   max-width: 1024px; /* Padrão para telas menores */
   width: 100%;
   margin: 0 auto;
-}
-
-
-@media (min-width: 1920px) {
-  .container {
-    max-width: 1024px; /* Ajuste para telas muito grandes */
-    margin: 0 auto;
-  }
+  padding: 12px;
 }
 
   .container2 {

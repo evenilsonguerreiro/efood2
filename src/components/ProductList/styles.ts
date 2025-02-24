@@ -8,5 +8,7 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
-  margin: 0 auto;
+  width: 1024px;
+  width: 100%;
+  background-color: #000;
 `
