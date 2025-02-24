@@ -11,9 +11,13 @@ export const Container = styled.section<Omit<Props, 'title' | 'comidas'>>`
 `
 export const List = styled.ul`
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Força 2 colunas */
   gap: 24px;
   width: 100%;
-  max-width: 1024px; /* Limita a largura total do grid */
   margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    max-width: 1024px;
+  }
 `
