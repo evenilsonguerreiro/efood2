@@ -7,7 +7,6 @@ export const Card = styled.div`
   height: 420px;
   border: 1px solid ${cores.pink};
   position: relative;
-  overflow: hidden;
 
   img {
     width: 100%;

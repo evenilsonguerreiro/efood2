@@ -32,9 +32,6 @@ export const EstiloGlobal = createGlobalStyle`
 }
 
   body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /* Para manter o layout em coluna */
     margin: 0;
     background-color: #fff;
     font-size: 40px;
@@ -44,7 +41,6 @@ export const EstiloGlobal = createGlobalStyle`
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-  padding: 12px;
 }
 
   .container2 {

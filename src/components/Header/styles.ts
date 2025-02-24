@@ -11,10 +11,6 @@ export const HeaderBar = styled.header`
   height: 384px;
   background-color: ${cores.branco};
   margin-bottom: 100px;
-
-  @media (max-width: 768px) {
-    width: 100%;
-  }
 `
 export const HeaderLogo = styled.div`
   width: 125px;
@@ -27,9 +23,4 @@ export const HeaderDescricao = styled.div`
   text-align: center;
   color: ${cores.pink};
   font-weight: bold;
-
-  @media (max-width: 768px) {
-    width: 250px;
-    font-size: 12px;
-  }
 `
