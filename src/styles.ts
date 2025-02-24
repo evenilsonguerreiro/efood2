@@ -24,14 +24,16 @@ export const EstiloGlobal = createGlobalStyle`
     text-decoration: none;
   }
 
-  body {
+  body, html {
+    width: 100%;
     margin: 0;
+    overflow-x: hidden;
     background-color: #fff;
     font-size: 40px;
   }
 
 .container {
-  max-width: 1024px; /* Padrão para telas menores */
+  max-width: 1024px;
   width: 100%;
   margin: 0 auto;
   padding: 12px;
