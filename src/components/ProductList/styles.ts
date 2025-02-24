@@ -10,5 +10,4 @@ export const List = styled.ul`
   gap: 24px;
   width: 1024px;
   width: 100%;
-  background-color: #000;
 `

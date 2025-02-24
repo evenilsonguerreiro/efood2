@@ -23,11 +23,19 @@ export const EstiloGlobal = createGlobalStyle`
     color: ${cores.branco};
     text-decoration: none;
   }
-
-  body, html {
+  main {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+}
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Para manter o layout em coluna */
     margin: 0;
-    overflow-x: hidden;
     background-color: #fff;
     font-size: 40px;
   }
