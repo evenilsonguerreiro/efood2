@@ -32,7 +32,6 @@ export const HeroBar = styled.div`
     color: white;
     z-index: 2;
 
-
     @media screen and (min-width: 1920px) and (min-height: 1080px) {
     .text-overlay {
       top: 50%;
