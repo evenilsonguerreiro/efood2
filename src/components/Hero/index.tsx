@@ -10,9 +10,11 @@ type HeroProps = {
 const Hero = ({ image, title, subtitle }: HeroProps) => (
   <HeroBar>
     <img src={image} alt="Imagem de apresentação" />
-    <div className="text-overlay">
-      <p>{title}</p>
-      <span>{subtitle}</span>
+    <div>
+      <div className="text-overlay">
+        <p>{title}</p>
+        <span>{subtitle}</span>
+      </div>
     </div>
   </HeroBar>
 )
