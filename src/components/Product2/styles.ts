@@ -7,8 +7,6 @@ export const Card2 = styled.div`
   height: 348px;
   top: 300px;
   background-color: ${cores.pink};
-
-
 `
 export const CardImg = styled.div`
   img {

@@ -38,30 +38,14 @@ export const HeroBar = styled.div`
 
     p {
       font-size: 32px;
-<<<<<<< HEAD
       top: 30px;
       position: absolute;
-=======
-      margin-bottom: 10px;
->>>>>>> c46237503b4eb3996ef28830e62a354db0b32179
     }
 
     span {
       font-size: 32px;
-<<<<<<< HEAD
       top: 187px;
       position: absolute;
-=======
-    }
-  }
-
-  @media screen and (min-width: 1370px) and (min-height: 1080px) {
-    .text-overlay {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: auto;
->>>>>>> c46237503b4eb3996ef28830e62a354db0b32179
     }
   }
 `
