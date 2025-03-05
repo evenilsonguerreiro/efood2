@@ -28,24 +28,40 @@ export const HeroBar = styled.div`
     position: absolute;
     display: flex;
     flex-direction: column;
-    top: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     color: white;
     z-index: 2;
+    text-align: center;
 
     p {
-      width: 300px;
-      height: 33px;
       font-size: 32px;
+<<<<<<< HEAD
       top: 30px;
       position: absolute;
+=======
+      margin-bottom: 10px;
+>>>>>>> c46237503b4eb3996ef28830e62a354db0b32179
     }
 
     span {
-      width: 676px;
-      height: 33px;
       font-size: 32px;
+<<<<<<< HEAD
       top: 187px;
       position: absolute;
+=======
+    }
+  }
+
+  @media screen and (min-width: 1370px) and (min-height: 1080px) {
+    .text-overlay {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: auto;
+>>>>>>> c46237503b4eb3996ef28830e62a354db0b32179
     }
   }
 `
