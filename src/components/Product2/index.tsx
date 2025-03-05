@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 import { Link } from 'react-router-dom'
@@ -27,22 +28,24 @@ type Props = {
 const Product2 = ({ title, image, description, button }: Props) => (
   <>
     {button.map((item, index) => (
-      <Card2 key={index}>
-        <CardImg>
-          {/* A imagem do prato agora é a imagem principal do card */}
-          <img src={item.foto} alt={item.nome} />
-        </CardImg>
+      <div className="container">
+        <Card2 key={index}>
+          <CardImg>
+            {/* A imagem do prato agora é a imagem principal do card */}
+            <img src={item.foto} alt={item.nome} />
+          </CardImg>
 
-        {/* Informações do prato */}
-        <CardTitle2>{item.nome}</CardTitle2>
-        <CardDescricao2>{item.descricao}</CardDescricao2>
+          {/* Informações do prato */}
+          <CardTitle2>{item.nome}</CardTitle2>
+          <CardDescricao2>{item.descricao}</CardDescricao2>
 
-        <CardButton>
-          <Link className="link" to="/perfilmodal">
-            Adicionar ao carrinho
-          </Link>
-        </CardButton>
-      </Card2>
+          <CardButton>
+            <Link className="link" to="/perfilmodal">
+              Adicionar ao carrinho
+            </Link>
+          </CardButton>
+        </Card2>
+      </div>
     ))}
   </>
 )

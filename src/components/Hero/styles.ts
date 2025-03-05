@@ -37,7 +37,6 @@ export const HeroBar = styled.div`
       height: 33px;
       font-size: 32px;
       top: 30px;
-      left: 171px;
       position: absolute;
     }
 
@@ -46,7 +45,6 @@ export const HeroBar = styled.div`
       height: 33px;
       font-size: 32px;
       top: 187px;
-      left: 171px;
       position: absolute;
     }
   }
