@@ -45,10 +45,7 @@ export const EstiloGlobal = createGlobalStyle`
 
   .container2 {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1024px;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 `
