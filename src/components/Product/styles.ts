@@ -4,7 +4,7 @@ import { cores } from '../../styles'
 export const Card = styled.div`
   background-color: ${cores.branco2};
   width: 498px;
-  height: 420px;
+  height: 400px;
   border: 1px solid ${cores.pink};
   position: relative;
 
@@ -21,6 +21,7 @@ export const Fundo = styled.div`
 export const Titulo = styled.h3`
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 10px;
   color: ${cores.pink};
 `
 

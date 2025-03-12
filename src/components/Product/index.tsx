@@ -1,8 +1,9 @@
-/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React from 'react'
 import { Link } from 'react-router-dom'
-import { ButtonContainer } from '../Button/styles'
+import { Card, Infos, Fundo, Titulo, Descricao } from './styles'
 import Tag from '../Tag'
-import { Card, Descricao, Fundo, Infos, Titulo } from './styles'
+import { ButtonContainer } from '../Button/styles'
 
 type Props = {
   title: string
@@ -12,24 +13,33 @@ type Props = {
   button: string
 }
 
-const Product = ({ title, image, description, infos, button }: Props) => (
-  <Card>
-    <img src={image} alt={title} />
-    <Infos>
-      {infos.map((info) => (
-        <Tag key={info}>{info}</Tag>
-      ))}
-    </Infos>
-    <Fundo>
-      <Titulo>{title}</Titulo>
-      <Descricao>{description}</Descricao>
-      <ButtonContainer>
-        <Link className="link2" to="/perfil">
-          {button}
-        </Link>
-      </ButtonContainer>
-    </Fundo>
-  </Card>
-)
+const Product = ({ title, image, description, infos, button }: Props) => {
+  const limitarDescricao = (descricao?: string, limite = 200) => {
+    if (!descricao) return ''
+    return descricao.length <= limite
+      ? descricao
+      : descricao.slice(0, limite) + '...'
+  }
+
+  return (
+    <Card>
+      <img src={image} alt={title} />
+      <Infos>
+        {infos.map((info, index) => (
+          <Tag key={index}>{info}</Tag>
+        ))}
+      </Infos>
+      <Fundo>
+        <Titulo>{title}</Titulo>
+        <Descricao>{limitarDescricao(description)}</Descricao>
+        <ButtonContainer>
+          <Link className="link2" to="/perfil">
+            {button}
+          </Link>
+        </ButtonContainer>
+      </Fundo>
+    </Card>
+  )
+}
 
 export default Product

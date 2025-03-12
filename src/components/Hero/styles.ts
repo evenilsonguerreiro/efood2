@@ -44,7 +44,7 @@ export const HeroBar = styled.div`
 
   .text-overlay p {
     font-size: 32px;
-    margin: 45px 0; /* Espaço entre os textos */
+    margin-bottom: 140px;
   }
 
   .text-overlay span {
