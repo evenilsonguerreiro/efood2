@@ -36,7 +36,7 @@ export const CardDescricao2 = styled.p`
   line-height: 20px;
   font-weight: 400;
   position: absolute;
-  top: 190px;
+  top: 200px;
   left: 8px;
 `
 export const CardButton = styled.button`
