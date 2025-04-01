@@ -20,12 +20,12 @@ import {
   DivButtom,
   Endereco2
 } from './styles'
-import { Content } from '../PerfilModal/styles'
 import { DivCep } from '../PerfilEntrega/styles'
 import { Link } from 'react-router-dom'
 import { CardButton } from '../../components/Product2/styles'
 import ProductList2 from '../../components/ProductList2'
 import { Cardapio } from '../Perfil'
+import { Content } from '../PerfilCarrinho/styles'
 
 export const italiano: Cardapio[] = [
   {

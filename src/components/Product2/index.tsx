@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
-import { Link } from 'react-router-dom'
 import { limitarDescricao } from '../../utils/utils' // Importando a função
 import {
   Card2,
@@ -41,11 +40,7 @@ const Product2 = ({ title, image, description, button }: Props) => (
           <CardDescricao2>
             {limitarDescricao(item.descricao, 250)}
           </CardDescricao2>
-          <CardButton>
-            <Link className="link" to="/perfilmodal">
-              Adicionar ao carrinho
-            </Link>
-          </CardButton>
+          <CardButton> Adicionar ao carrinho </CardButton>
         </Card2>
       </div>
     ))}

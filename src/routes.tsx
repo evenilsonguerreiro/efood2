@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Home from './pages/Home'
 
 import { Routes, Route, useLocation } from 'react-router-dom'
-import PerfilModal from './pages/PerfilModal'
 import Perfil from './pages/Perfil'
 import PerfilCarrinho from './pages/PerfilCarrinho'
 import PerfilEntrega from './pages/PerfilEntrega'
@@ -26,7 +25,6 @@ const Rotas = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/perfil" element={<Perfil />} />
-        <Route path="/perfilmodal" element={<PerfilModal />} />
         <Route path="/perfilcarrinho" element={<PerfilCarrinho />} />
         <Route path="/perfilEntrega" element={<PerfilEntrega />} />
         <Route path="/perfilpagamento" element={<PerfilPagamento />} />

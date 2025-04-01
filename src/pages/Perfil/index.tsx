@@ -1,9 +1,22 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from 'react'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
 import ProductList2 from '../../components/ProductList2'
 import Footer from '../../components/Footer'
+import {
+  ButtonModal,
+  CloseModal,
+  ConteudoModal,
+  DescricaoModal,
+  ImagemModal,
+  Modal,
+  TituloModal
+} from './styles'
+import imagem from '../../assets/imagem/image 3.png'
+import close from '../../assets/imagem/close 1.png'
+import { Link } from 'react-router-dom'
 
 export interface Cardapio {
   id: number
@@ -20,6 +33,7 @@ export interface Cardapio {
 }
 
 export const Perfil = () => {
+  const [modalEstarAberto, setModalEstarAberto] = useState(false)
   const [italiano, setItaliano] = useState<Cardapio[]>([])
   const [heroData, setHeroData] = useState({
     image: '',
@@ -32,13 +46,12 @@ export const Perfil = () => {
       .then((res) => res.json())
       .then((data) => {
         setItaliano(data)
-        // Usar o primeiro restaurante para preencher o Hero
         if (data.length > 0) {
           const restaurant = data[0] // Captura o primeiro restaurante da lista
           setHeroData({
-            image: restaurant.capa, // URL da imagem do restaurante
-            title: 'Italiana', // Título da cozinha ou tipo do restaurante
-            subtitle: restaurant.titulo // Subtítulo sendo o nome do restaurante (ex: "Bella Tovora Italiana")
+            image: restaurant.capa,
+            title: 'Italiana',
+            subtitle: restaurant.titulo
           })
         }
       })
@@ -50,11 +63,43 @@ export const Perfil = () => {
       <HeaderPerfil />
       <Hero
         image={heroData.image}
-        title={heroData.title} // Agora, título é fixo como 'Italiana'
-        subtitle={heroData.subtitle} // Agora, o subtítulo é o nome do restaurante
+        title={heroData.title}
+        subtitle={heroData.subtitle}
       />
       <ProductList2 cardapios={italiano} />
       <Footer className="footer-perfil" />
+
+      <Modal className={modalEstarAberto ? `visivel` : ''}>
+        <div className="container">
+          <ConteudoModal>
+            <ImagemModal>
+              <img src={imagem} alt="" />
+            </ImagemModal>
+            <TituloModal>
+              <h2>Pizza Marguerita</h2>
+            </TituloModal>
+            <CloseModal>
+              <img src={close} alt="Fechar" />
+            </CloseModal>
+            <DescricaoModal>
+              <p>
+                A pizza Margherita é uma pizza clássica da culinária italiana,
+                reconhecida por sua simplicidade e sabor inigualável. com uma
+                com uma base de massa fina e crocante, coberta com molho de
+                fresco, queijo mussarela de alta qualidade, manjericão fresco e
+                de oliva extra-virgem.
+              </p>
+              <p>Serve: de 2 a 3 pessoas.</p>
+            </DescricaoModal>
+            <ButtonModal>
+              <Link className="link" to="/perfilEntrega">
+                Adicionar ao carrinho
+              </Link>
+            </ButtonModal>
+          </ConteudoModal>
+        </div>
+        <div className="overlay"></div>
+      </Modal>
     </>
   )
 }
