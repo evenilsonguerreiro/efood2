@@ -29,7 +29,7 @@ type Props = {
 const Product2 = ({ title, image, description, button, abrirModal }: Props) => (
   <>
     {button.map((item, index) => (
-      <div className="container" key={index}>
+      <div className="container2" key={index}>
         <Card2>
           <CardImg>
             <img src={item.foto} alt={item.nome} />

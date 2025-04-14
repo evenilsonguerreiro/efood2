@@ -47,5 +47,6 @@ export const EstiloGlobal = createGlobalStyle`
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    margin-top: 30px;
   }
 `

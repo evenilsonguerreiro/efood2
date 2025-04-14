@@ -41,13 +41,13 @@ export const ImagemModal = styled.div`
   left: 30px;
 
   img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
   }
 `
 export const TituloModal = styled.span`
-  width: 200px;
+  width: 400px;
   height: 21px;
   font-size: 14px;
   font-weight: bold;

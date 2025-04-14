@@ -3,7 +3,8 @@ import { cores } from '../../styles'
 
 export const Card2 = styled.div`
   position: relative;
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
   height: 348px;
   top: 300px;
   background-color: ${cores.pink};
