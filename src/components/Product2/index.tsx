@@ -1,7 +1,7 @@
+/* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/jsx-key */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable react/react-in-jsx-scope */
-import { limitarDescricao } from '../../utils/utils' // Importando a função
+import { limitarDescricao } from '../../utils/utils'
 import {
   Card2,
   CardButton,
@@ -23,24 +23,22 @@ type Props = {
   image: string
   description: string
   button: ButtonProps[]
+  abrirModal: () => void // Adicionamos aqui
 }
 
-const Product2 = ({ title, image, description, button }: Props) => (
+const Product2 = ({ title, image, description, button, abrirModal }: Props) => (
   <>
     {button.map((item, index) => (
       <div className="container" key={index}>
         <Card2>
           <CardImg>
-            {/* A imagem do prato agora é a imagem principal do card */}
             <img src={item.foto} alt={item.nome} />
           </CardImg>
-
-          {/* Informações do prato */}
           <CardTitle2>{item.nome}</CardTitle2>
           <CardDescricao2>
             {limitarDescricao(item.descricao, 250)}
           </CardDescricao2>
-          <CardButton> Adicionar ao carrinho </CardButton>
+          <CardButton onClick={abrirModal}>Adicionar ao carrinho </CardButton>
         </Card2>
       </div>
     ))}

@@ -129,7 +129,6 @@ const PerfilCarrinho = () => {
       )}
       <ProductList2 cardapios={italiano} />
       <Footer />
-
       {showOverlay && (
         <Overlay>
           <Content onClick={handleClose}>

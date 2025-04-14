@@ -9,7 +9,7 @@ export const Modal = styled.div`
   height: 100%;
   z-index: 1000;
 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 
@@ -39,6 +39,12 @@ export const ImagemModal = styled.div`
   height: 280px;
   top: 30px;
   left: 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 `
 export const TituloModal = styled.span`
   width: 200px;

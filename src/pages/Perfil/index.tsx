@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react/react-in-jsx-scope */
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import ProductList2 from '../../components/ProductList2'
+import ProductList2, { Cardapio, ItemCardapio } from '../../components/ProductList2'
 import Footer from '../../components/Footer'
 import {
   ButtonModal,
@@ -14,26 +14,12 @@ import {
   Modal,
   TituloModal
 } from './styles'
-import imagem from '../../assets/imagem/image 3.png'
 import close from '../../assets/imagem/close 1.png'
 import { Link } from 'react-router-dom'
 
-export interface Cardapio {
-  id: number
-  titulo: string
-  descricao: string
-  capa: string // Imagem do restaurante
-  cardapio: Array<{
-    foto: string
-    preco: number
-    nome: string
-    descricao: string
-    porcao: string
-  }>
-}
-
 export const Perfil = () => {
-  const [modalEstarAberto, setModalEstarAberto] = useState(false)
+  const [itemSelecionado, setItemSelecionado] = useState<ItemCardapio | null>(null)
+  const [modalEstaAberto, setModalEstaAberto] = useState(false)
   const [italiano, setItaliano] = useState<Cardapio[]>([])
   const [heroData, setHeroData] = useState({
     image: '',
@@ -58,6 +44,15 @@ export const Perfil = () => {
       .catch((error) => console.error('Erro ao buscar dados da API:', error))
   }, [])
 
+  // Função para abrir o modal com as informações do item
+  const abrirModal = (item: ItemCardapio) => {
+    setItemSelecionado(item)
+    setModalEstaAberto(true)
+  }
+
+  // Função para fechar o modal
+  const fecharModal = () => setModalEstaAberto(false)
+
   return (
     <>
       <HeaderPerfil />
@@ -66,39 +61,38 @@ export const Perfil = () => {
         title={heroData.title}
         subtitle={heroData.subtitle}
       />
-      <ProductList2 cardapios={italiano} />
+
+      <ProductList2 cardapios={italiano} abrirModal={abrirModal} />
       <Footer className="footer-perfil" />
 
-      <Modal className={modalEstarAberto ? `visivel` : ''}>
+      <Modal className={modalEstaAberto ? 'visivel' : ''}>
         <div className="container">
           <ConteudoModal>
-            <ImagemModal>
-              <img src={imagem} alt="" />
-            </ImagemModal>
-            <TituloModal>
-              <h2>Pizza Marguerita</h2>
-            </TituloModal>
-            <CloseModal>
-              <img src={close} alt="Fechar" />
-            </CloseModal>
-            <DescricaoModal>
-              <p>
-                A pizza Margherita é uma pizza clássica da culinária italiana,
-                reconhecida por sua simplicidade e sabor inigualável. com uma
-                com uma base de massa fina e crocante, coberta com molho de
-                fresco, queijo mussarela de alta qualidade, manjericão fresco e
-                de oliva extra-virgem.
-              </p>
-              <p>Serve: de 2 a 3 pessoas.</p>
-            </DescricaoModal>
-            <ButtonModal>
-              <Link className="link" to="/perfilEntrega">
-                Adicionar ao carrinho
-              </Link>
-            </ButtonModal>
+            {itemSelecionado && (
+              <>
+                <ImagemModal>
+                  <img src={itemSelecionado.foto} alt={itemSelecionado.nome} />
+                </ImagemModal>
+                <TituloModal>
+                  <h2>{itemSelecionado.nome}</h2>
+                </TituloModal>
+                <CloseModal onClick={fecharModal}>
+                  <img src={close} alt="Fechar" />
+                </CloseModal>
+                <DescricaoModal>
+                  <p>{itemSelecionado.descricao}</p>
+                  <p>{itemSelecionado.porcao}</p>
+                </DescricaoModal>
+                <ButtonModal>
+                  <Link className="link" to="/perfilEntrega">
+                    Adicionar ao carrinho
+                  </Link>
+                </ButtonModal>
+              </>
+            )}
           </ConteudoModal>
         </div>
-        <div className="overlay"></div>
+        <div className="overlay" onClick={fecharModal}></div>
       </Modal>
     </>
   )
