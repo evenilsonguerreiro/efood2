@@ -3,7 +3,10 @@
 import { useState, useEffect } from 'react'
 import HeaderPerfil from '../../components/HeaderPerfil'
 import Hero from '../../components/Hero'
-import ProductList2, { Cardapio, ItemCardapio } from '../../components/ProductList2'
+import ProductList2, {
+  Cardapio,
+  ItemCardapio
+} from '../../components/ProductList2'
 import Footer from '../../components/Footer'
 import {
   ButtonModal,
@@ -21,7 +24,9 @@ import { Link } from 'react-router-dom'
 export type { Cardapio }
 
 export const Perfil = () => {
-  const [itemSelecionado, setItemSelecionado] = useState<ItemCardapio | null>(null)
+  const [itemSelecionado, setItemSelecionado] = useState<ItemCardapio | null>(
+    null
+  )
   const [modalEstaAberto, setModalEstaAberto] = useState(false)
   const [italiano, setItaliano] = useState<Cardapio[]>([])
   const [heroData, setHeroData] = useState({
