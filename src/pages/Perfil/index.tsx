@@ -17,6 +17,9 @@ import {
 import close from '../../assets/imagem/close 1.png'
 import { Link } from 'react-router-dom'
 
+// 👇 Exportando o tipo Cardapio para uso em outros arquivos
+export type { Cardapio }
+
 export const Perfil = () => {
   const [itemSelecionado, setItemSelecionado] = useState<ItemCardapio | null>(null)
   const [modalEstaAberto, setModalEstaAberto] = useState(false)

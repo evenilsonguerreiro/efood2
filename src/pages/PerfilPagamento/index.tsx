@@ -128,7 +128,6 @@ export const italiano: Cardapio[] = [
 
 const PerfilPagamento = () => {
   const [showOverlay, setShowOverlay] = useState(true)
-
   const handleClose = () => {
     setShowOverlay(false)
   }
@@ -143,7 +142,12 @@ const PerfilPagamento = () => {
           subtitle={italiano[0].titulo}
         />
       )}
-      <ProductList2 cardapios={italiano} />
+      <ProductList2
+        cardapios={italiano}
+        abrirModal={() => {
+          // eslint-disable-next-line @typescript-eslint/no-empty-function
+        }}
+      />
       <Footer />
       {showOverlay && (
         <Overlay>

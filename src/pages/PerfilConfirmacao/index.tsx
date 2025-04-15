@@ -127,9 +127,15 @@ const PerfilConfirmacao = () => {
           subtitle={italiano[0].titulo}
         />
       )}
-      <ProductList2 cardapios={italiano} />
-      <Footer />
 
+      <ProductList2
+        cardapios={italiano}
+        abrirModal={() => {
+          // eslint-disable-next-line @typescript-eslint/no-empty-function
+        }}
+      />
+
+      <Footer />
       {showOverlay && (
         <Overlay>
           <Content onClick={handleClose}>
@@ -153,5 +159,4 @@ const PerfilConfirmacao = () => {
     </>
   )
 }
-
 export default PerfilConfirmacao

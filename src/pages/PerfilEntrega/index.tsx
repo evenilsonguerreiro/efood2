@@ -138,7 +138,7 @@ const PerfilEntrega = () => {
           subtitle={italiano[0].titulo}
         />
       )}
-      <ProductList2 cardapios={italiano} />
+      <ProductList2 cardapios={italiano} abrirModal={() => {}} />
       <Footer />
       {showOverlay && (
         <Overlay>
